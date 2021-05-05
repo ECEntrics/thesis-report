@@ -1,0 +1,39 @@
+\documentclass{report}
+
+% Custom packages
+\input{packages}
+
+% Sets up the bib files
+\input{bibliography/bib-setup}
+
+% Paper size and margins
+\geometry{a4paper, top=2.5cm, bottom=2.5cm, left=2.2cm,right=2.2cm}
+
+\input{thesis-details}
+
+\begin{document}
+
+% Makes the cover page
+\maketitle
+
+% TODO: delete this
+\input{examples-page}
+
+\input{chapters/0.preamble/0.0.preamble}
+
+% start of thesis body
+% ---------------------------
+
+\input{chapters/1.introduction/1.0.introduction}
+\input{chapters/2.theoretical-background/2.0.theoretical-background}
+\input{chapters/3.application-design/3.0.application-design}
+\input{chapters/4.application-implementation/4.0.application-implementation}
+\input{chapters/5.conclusions/5.0.conclusions}
+
+% end of thesis body
+% --------------------------
+
+% Prints out the references
+\printbibliography
+
+\end{document}
