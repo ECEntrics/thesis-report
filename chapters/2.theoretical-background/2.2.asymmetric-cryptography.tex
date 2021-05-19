@@ -9,7 +9,11 @@
 	
 Η δημιουργία ενός ζεύγους κλειδιών επιτυγχάνεται μέσω μιας \textit{γεννήτριας κλειδιών} (key generation function), η οποία χρησιμοποιεί ειδικούς αλγορίθμους (π.χ. RSA), δεχόμενη ως είσοδο έναν τυχαίο αριθμό. Από τα παραχθέντα κλειδιά, το δημόσιο γνωστοποιείται σε τρίτους, ενώ το ιδιωτικό παραμένει μυστικό.
 
-% TODO: insert diagram
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=15cm]{asymmetric-key-generation.png}
+	\caption{Παραγωγή ασύμμετρου ζεύγους κλειδιών}
+\end{figure}
 
 Ο χρήστης μπορεί να χρησιμοποιήσει τα κλειδιά για δύο βασικούς σκοπούς:
 
@@ -23,4 +27,10 @@
 \end{enumerate}
 
 Με τον συνδυασμό των παραπάνω, λέμε ότι δύο χρήστες μπορούν να επικοινωνούν μεταξύ τους με \textit{κρυπτογράφηση απ' άκρη σ' άκρη} (end to end encryption).
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=15cm]{asymmetric-end-to-end-communication.png}
+	\caption{Κρυπτογράφηση απ' άκρη σ' άκρη}
+\end{figure}
 
