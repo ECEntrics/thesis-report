@@ -2,7 +2,7 @@
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=2cm]{ipfs-logo.png}
+	\includegraphics[width=2cm]{assets/figures/ipfs-logo.png}
 	\caption{IPFS logo}
 \end{figure}
 
@@ -16,7 +16,7 @@
 	\item \textbf{Σύνδεση περιεχομένου μέσω κατευθυνόμενων άκυκλων γράφων (Directed Acyclic Graphs ή DAGs)}. Το IPFS αξιοποιεί DAGs (και συγκεκριμένα Merkle DAGs), μίας δομής δεδομένων της οποίας κάθε κόμβος έχει ως μοναδικό αναγνωριστικό το hash του περιεχομένου του (το CID).
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=15cm]{merkle-dag.png}
+		\includegraphics[width=15cm]{assets/figures/merkle-dag.png}
 		\caption{Merkle DAG\cite{2.7-merkle-dags-proto-school}}
 	\end{figure}
 	Στο παραπάνω Merkle DAG τα baf...i αποτελούν τα CID των αρχείων και των φακέλων. Το δένδρο δημιουργείται από κάτω προς τα πάνω, υπολογίζοντας κάθε φορά τα κατάλληλα hashes/CIDs. Σε περίπτωση που το περιεχόμενο ενός κόμβου αλλάξει, τότε αλλάζει τόσο το CID του, όσο και τα CIDs όλων των προγόνων του.
