@@ -27,11 +27,10 @@
 	\item \textbf{Identity}: Κάθε φορά που προστίθεται μία εγγραφή στη βάση υπογράφεται από τον δημιουργό της, ο οποίος προσδιορίζεται από μία ταυτότητα (identity). Το Identity object, πέρα από τον προεπιλεγμένο τρόπο λειτουργίας, μπορεί να προσαρμοστεί έτσι ώστε να συνδέεται με κάποιο εξωτερικό αναγνωριστικό.
 	Η μορφή του έχει ως εξής (βλ. και  \url{https://github.com/orbitdb/orbit-db-identity-provider}):
 	
-	\begin{figure}[H]
-		\centering
-		\simplelisting[width=14cm]{orbit-db-identity.js}
+	\begin{enumitemcenteredfigure}
+		\simplelisting[width=15cm]{orbit-db-identity.js}
 		\caption{OrbitDB Identity}
-	\end{figure}
+	\end{enumitemcenteredfigure}
 
 	\item \textbf{Access Control}: Κατά τη δημιουργία μίας βάσης μπορούν να οριστούν όσοι θα έχουν δικαίωμα να γράψουν σε αυτήν μέσω ενός ελεγκτή πρόσβασης (access controller). Ο ελεγκτής θα περιλαμβάνει τα public keys τους, τα οποία μπορούν να ανακτηθούν από το identity του καθενός. Από προεπιλογή και αν δεν ορίζεται διαφορετικά, δίνεται πρόσβαση εγγραφής μόνο στον δημιουργό της βάσης.
 \end{itemize}

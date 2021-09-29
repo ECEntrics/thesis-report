@@ -1,0 +1,13 @@
+% Centered figure inside an item list
+\newenvironment{enumitemcenteredfigure}
+{
+	\begin{minipage}{\linewidth}
+		\centering
+		\begin{figure}[H]
+			\centering
+		}
+		{
+		\end{figure}
+	\end{minipage}
+	\medskip
+}
