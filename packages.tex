@@ -4,19 +4,28 @@
 \usepackage[subpreambles=true]{standalone}
 
 % Used for all the files inside thesis directory
-\usepackage{subfiles}
-
-% General styling settings
-\usepackage{thesis-general}
+\usepackage{subfiles}	%TODO: possibly unused (remove?)
 
 % Paper size and margins
 \usepackage{geometry}
 
-\usepackage[backend=bibtex, sorting=none]{biblatex}
-\usepackage{csquotes}
-\usepackage{listings}	% Typeset source code listings
+% --- Languages & Fonts ---
+\usepackage{languages-fonts}
 
-% Custom commands
-\input{custom-commands/custom-title}
+% --- Styling ---
+\usepackage{hyperref}   % Extensive support for hypertext
+\usepackage{authblk}    % Support for footnote style author/affiliation
+\usepackage{enumitem}	% For item lists
+\usepackage{greek-enumerate}	% Greek enumeration for ordered item lists
+\usepackage{float}	% For \begin{figure}[H]
+\usepackage[font={footnotesize, it}]{caption}   % For captions under figures
+\usepackage{csquotes}	%TODO: unused atm (remove?)
+\usepackage{listings}	%TODO: unused atm (remove?)
+
+% --- Bibliography ---
+\usepackage[backend=bibtex, sorting=none]{biblatex}
+
+% --- Custom commands ---
+\input{custom-commands/custom-title-page}
 \input{custom-commands/custom-lists}
 
