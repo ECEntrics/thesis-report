@@ -277,3 +277,6 @@ TSWLatexianTemp*
 
 # xwatermark package
 *.xwm
+
+output
+Makefile
