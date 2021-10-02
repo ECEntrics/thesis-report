@@ -6,51 +6,42 @@
 Το σύστημα συντίθεται από διάφορες μικροϋπηρεσίες, κάποιες από τις οποίες αναπτύχθηκαν στα πλαίσια αυτής της εργασίας ενώ άλλες αποτελούν δωρεάν λογισμικό ανοιχτού κώδικα. Οι μικροϋπηρεσίες αυτές συνοψίζονται στον παρακάτω πίνακα (πίνακας \ref{table:4-4-microservice-summary}).
 
 \begin{table}[H]
-\begin{center}
-\begin{tabular}{|l l|}
- \hline
- \textbf{Μικροϋπηρεσία} & \textbf{Σύντομη περιγραφή - Αντικείμενο/Στόχος} \\
- \hline\hline
- Concordia Application & Υπηρεσία με την οποία αλληλεπιδρούν οι χρήστες. \\ [0.5ex]
- \hline
- Concordia Contracts Migrator & Υπηρεσία μεταφόρτωσης των συμβολαίων (contracts) στο blockchain. \\ [0.5ex]
- \hline
- Concordia Pinner & Υπηρεσία καρφιτσώματος δεδομένων. \\ [0.5ex]
- \hline
- Concordia Contracts Provider & Υπηρεσία που διαμοιράζει τα contracts της εφαρμογής μέσω HTTP. \\ [0.5ex]
- \hline
- Ganache & Τοπικό, ιδιωτικό Ethereum blockchain. \\ [0.5ex]
- \hline
- Rendezvous Server & Υπηρεσία εύρεσης ομότιμων χρηστών. \\ [0.5ex]
- \hline
-\end{tabular}
-\end{center}
-\caption{Σύντομη περιγραφή υπηρεσιών συστήματος.}
-\label{table:4-4-microservice-summary}
+    \begin{center}
+        \begin{tabularx}{\textwidth}{l X}
+            \toprule
+            \textbf{Μικροϋπηρεσία} & \textbf{Σύντομη περιγραφή - Αντικείμενο/Στόχος} \\
+            \midrule
+            Concordia Application        & Υπηρεσία με την οποία αλληλεπιδρούν οι χρήστες. \\ [0.5ex]
+            Concordia Contracts Migrator & Υπηρεσία μεταφόρτωσης των συμβολαίων (contracts) στο blockchain. \\ [0.5ex]
+            Concordia Pinner             & Υπηρεσία καρφιτσώματος δεδομένων. \\ [0.5ex]
+            Concordia Contracts Provider & Υπηρεσία που διαμοιράζει τα contracts της εφαρμογής μέσω HTTP. \\ [0.5ex]
+            Ganache                      & Τοπικό, ιδιωτικό Ethereum blockchain. \\ [0.5ex]
+            Rendezvous Server            & Υπηρεσία εύρεσης ομότιμων χρηστών. \\ [0.5ex]
+            \bottomrule
+        \end{tabularx}
+    \end{center}
+    \caption{Σύντομη περιγραφή υπηρεσιών συστήματος.}
+    \label{table:4-4-microservice-summary}
 \end{table}
 
 Στα πλαίσια της εργασίας αναπτύχθηκαν επίσης διάφορα αρθρώματα, κυρίως με τη μορφή βιβλιοθηκών Javascript. Τα αρθρώματα χρησιμοποιούνται από τις υπηρεσίες για την επίτευξη των επιμέρους εργασιών. Η ανάπτυξη του λογισμικού σε ξεχωριστά αρθρώματα επιτρέπει την εύκολη επαναχρησιμοποίηση του κώδικα καθώς και τον διαχωρισμό των αυτόνομων τμημάτων κώδικα. Τα αρθρώματα συνοψίζονται στον παρακάτω πίνακα (πίνακας \ref{table:4-4-software-units-summary}).
 
 \begin{table}[H]
-\begin{center}
-\begin{tabular}{|l l|}
- \hline
- \textbf{Άρθρωμα} & \textbf{Σύντομη περιγραφή - Αντικείμενο/Στόχος} \\
- \hline\hline
- Άρθρωμα concordia-shared & Χρήσιμα εργαλεία και σταθερές συστήματος. \\ [0.5ex]
- \hline
- Άρθρωμα concordia-contracts & Μεταγλώττιση των contracts και διάθεση των artifacts. \\ [0.5ex]
- \hline
- Άρθρωμα eth-identity-provider & Δημιουργία μοναδικού αναγνωριστικού για χρήση στην βάση OrbitDB. \\ [0.5ex]
- \hline
- Άρθρωμα drizzle & Βελτιωμένη προγραμματιστική διεπαφή επικοινωνίας με το blockchain. \\ [0.5ex]
- \hline
- Άρθρωμα breeze & Βελτιωμένη προγραμματιστική διεπαφή χρήσης της βάση OrbitDB. \\ [0.5ex]
- \hline
-\end{tabular}
-\end{center}
-\caption{Σύντομη περιγραφή υπηρεσιών συστήματος.}
-\label{table:4-4-software-units-summary}
+    \begin{center}
+        \begin{tabularx}{\textwidth}{l X}
+            \toprule
+            \textbf{Άρθρωμα} & \textbf{Σύντομη περιγραφή - Αντικείμενο/Στόχος} \\
+            \midrule
+            Άρθρωμα concordia-shared      & Χρήσιμα εργαλεία και σταθερές συστήματος. \\ [0.5ex]
+            Άρθρωμα concordia-contracts   & Μεταγλώττιση των contracts και διάθεση των artifacts. \\ [0.5ex]
+            Άρθρωμα eth-identity-provider & Δημιουργία μοναδικού αναγνωριστικού για χρήση με τη βάση OrbitDB. \\ [0.5ex]
+            Άρθρωμα drizzle               & Βελτιωμένη προγραμματιστική διεπαφή επικοινωνίας με το blockchain. \\ [0.5ex]
+            Άρθρωμα breeze                & Βελτιωμένη προγραμματιστική διεπαφή χρήσης της βάση OrbitDB. \\ [0.5ex]
+            \bottomrule
+        \end{tabularx}
+    \end{center}
+    \caption{Σύντομη περιγραφή υπηρεσιών συστήματος.}
+    \label{table:4-4-software-units-summary}
 \end{table}
 
 Τα αρθρώματα και οι υπηρεσίες θα περιγραφούν σε μεγαλύτερη ανάλυση στα επόμενα κεφάλαια. Στο παρακάτω διάγραμμα (διάγραμμα ) φαίνεται η συνολική αρχιτεκτονική του συστήματος.
@@ -188,9 +179,9 @@
 \vspace{0.5cm}
 \textbf{Περιγραφή - Στόχοι υπηρεσίας}
 
-Η υπηρεσία Contracts Provider αποτελεί μία βοηθητική υπηρεσία η οποία υλοποιεί ένα απλό αποθετήριο για τα contract artifacts. Είναι γραμμένη σε Javascript και διαθέτει δύο HTTP endpoints, ένα για τη μεταφόρτωση (upload) των artifacts προς την υπηρεσία και ένα για τη λήψη (download) από την υπηρεσία. Η υπηρεσία υποστηρίζει επίσης την επισύναψη ετικετών στα artifacts, όπως η έκδοση (version) ή το κλαδί ανάπτυξης (branch, για παράδειγμα master/develop).
+Η υπηρεσία Contracts Provider αποτελεί μία βοηθητική υπηρεσία η οποία υλοποιεί ένα απλό αποθετήριο για τα contract artifacts. Είναι γραμμένη σε Javascript και διαθέτει δύο HTTP \textenglish{endpoints}, ένα για τη μεταφόρτωση (upload) των artifacts προς την υπηρεσία και ένα για τη λήψη (download) από την υπηρεσία. Η υπηρεσία υποστηρίζει επίσης την επισύναψη ετικετών στα artifacts, όπως η έκδοση (version) ή το κλαδί ανάπτυξης (branch, για παράδειγμα \textenglish{master/develop}).
 
-Η υπηρεσία χρησιμοποιείται σε μία προσπάθεια αποσύνδεσης της βασικής εφαρμογής που υλοποιεί η υπηρεσία Concordia Application από μία συγκεκριμένη έκδοση των contracts. Οι λόγοι που αυτό είναι επιθυμητό αναπτύχθηκαν στην περιγραφή της υπηρεσίας Concordia Application (κεφάλαιο \ref{subsection:4-4-concordia-application-service}). Ωστόσο, η υπηρεσία Contracts Provider αποτελεί σημείο κεντροποίησης του συστήματος, για το λόγο αυτό θεωρείται προσωρινή λύση η οποία θα μπορούσε να αντικατασταθεί από αποκεντρωτικές λύσεις όπως η μεταφόρτωση των artifacts στο IPFS και ο διαμοιρασμός τους από εκεί.
+Η υπηρεσία χρησιμοποιείται σε μία προσπάθεια αποσύνδεσης της βασικής εφαρμογής που υλοποιεί η υπηρεσία Concordia Application από μία συγκεκριμένη έκδοση των contracts. Οι λόγοι που αυτό είναι επιθυμητό αναπτύχθηκαν στην περιγραφή της υπηρεσίας Concordia \textenglish{Application} (κεφάλαιο \ref{subsection:4-4-concordia-application-service}). Ωστόσο, η υπηρεσία Contracts Provider αποτελεί σημείο κεντροποίησης του συστήματος, για το λόγο αυτό θεωρείται προσωρινή λύση η οποία θα μπορούσε να αντικατασταθεί από αποκεντρωτικές λύσεις όπως η μεταφόρτωση των artifacts στο IPFS και ο διαμοιρασμός τους από εκεί.
 
 \vspace{0.5cm}
 \textbf{Διανομή}
@@ -246,9 +237,9 @@
 Εδώ αναλύεται η επικοινωνία κάθε μικροϋπηρεσίας:
 
 \begin{itemize}
-    \item \textbf{Contracts Migrator}: η υπηρεσία εκτελεί αίτημα HTTP κατά την μεταφόρτωση των contracts στο Ethereum blockchain, επίσης εκτελεί αίτημα HTTP για την μεταφόρτωση των contract artifacts στην υπηρεσία Contracts Provider
+    \item \textbf{Contracts Migrator}: η υπηρεσία εκτελεί αίτημα HTTP κατά την μεταφόρτωση των \textenglish{contracts} στο Ethereum blockchain, επίσης εκτελεί αίτημα HTTP για την μεταφόρτωση των contract artifacts στην υπηρεσία Contracts Provider
 
-    \item \textbf{Concordia Application}: η υπηρεσία εκτελεί αίτημα HTTP για την λήψη των contract artifacts από την υπηρεσία Contracts Provider, εκτελεί αιτήματα HTTP για την διενέργεια συναλλαγών στο Ethereum blockchain και τέλος δημιουργεί κανάλι UDP επικοινωνίας με την υπηρεσία Rendezvous Server για την ανακάλυψη ομότιμων χρηστών (peers) στο δίκτυο IPFS
+    \item \textbf{Concordia Application}: η υπηρεσία εκτελεί αίτημα HTTP για την λήψη των contract \textenglish{artifacts} από την υπηρεσία Contracts Provider, εκτελεί αιτήματα HTTP για την διενέργεια συναλλαγών στο Ethereum blockchain και τέλος δημιουργεί κανάλι UDP επικοινωνίας με την υπηρεσία Rendezvous Server για την ανακάλυψη ομότιμων χρηστών (peers) στο δίκτυο IPFS
 
     \item \textbf{Pinner}: η υπηρεσία εκτελεί αίτημα HTTP για την λήψη των contract artifacts από την υπηρεσία Contracts Provider, εκτελεί αιτήματα HTTP για την ανανέωση και επίβλεψη της κατάστασης του blockchain στο Ethereum blockchain και τέλος δημιουργεί κανάλι UDP επικοινωνίας με την υπηρεσία Rendezvous Server για την ανακάλυψη peers στο δίκτυο IPFS
 

@@ -22,6 +22,8 @@
 \usepackage[font={footnotesize, it}]{caption}	% For captions under figures
 \usepackage{csquotes}							%TODO: unused atm (remove?)
 \usepackage{listings}							%TODO: unused atm (remove?)
+\usepackage{tabularx}							% Support for break lines inside table cells
+\usepackage{booktabs}							% Useful table styling commands
 
 % --- Bibliography ---
 \usepackage[sorting=none]{biblatex}	% Make sure to have biber as default bibliography tool (e.g. in Texstudio's build configuration)
@@ -32,3 +34,6 @@
 
 % --- Custom styles ---
 \renewcommand{\arraystretch}{1.2}	% Streches the table row height so text is not crammed between the lines
+
+% Hyphenations
+\input{misc/hyphenations}
