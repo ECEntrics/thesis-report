@@ -4,19 +4,36 @@
 \usepackage[subpreambles=true]{standalone}
 
 % Used for all the files inside thesis directory
-\usepackage{subfiles}
-
-% General styling settings
-\usepackage{thesis-general}
+\usepackage{subfiles}	%TODO: possibly unused (remove?)
 
 % Paper size and margins
 \usepackage{geometry}
 
-\usepackage[backend=bibtex, sorting=none]{biblatex}
-\usepackage{csquotes}
-\usepackage{listings}	% Typeset source code listings
+% --- Languages & Fonts ---
+\usepackage{polyglossia}
+\input{polyglossia-setup}
 
-% Custom commands
-\input{custom-commands/custom-title}
+% --- Styling ---
+\usepackage{hyperref}							% Extensive support for hypertext
+\usepackage{authblk}							% Support for footnote style author/affiliation
+\usepackage{enumitem}							% For item lists
+\usepackage{custom-packages/greek-enumerate}	% Greek enumeration for ordered item lists
+\usepackage{float}								% For \begin{figure}[H]
+\usepackage[font={footnotesize, it}]{caption}	% For captions under figures
+\usepackage{csquotes}							%TODO: unused atm (remove?)
+\usepackage{listings}							%TODO: unused atm (remove?)
+\usepackage{tabularx}							% Support for break lines inside table cells
+\usepackage{booktabs}							% Useful table styling commands
+
+% --- Bibliography ---
+\usepackage[sorting=none]{biblatex}	% Make sure to have biber as default bibliography tool (e.g. in Texstudio's build configuration)
+
+% --- Custom commands ---
+\input{custom-commands/custom-title-page}
 \input{custom-commands/custom-lists}
 
+% --- Custom styles ---
+\renewcommand{\arraystretch}{1.2}	% Streches the table row height so text is not crammed between the lines
+
+% Hyphenations
+\input{misc/hyphenations}
