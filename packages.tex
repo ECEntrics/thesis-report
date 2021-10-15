@@ -20,7 +20,7 @@
 \usepackage{custom-packages/greek-enumerate}	% Greek enumeration for ordered item lists
 \usepackage{float}								% For \begin{figure}[H]
 \usepackage[font={footnotesize, it}]{caption}	% For captions under figures
-\usepackage{csquotes}							%TODO: unused atm (remove?)
+\usepackage [autostyle]{csquotes}
 \usepackage{listings}							%TODO: unused atm (remove?)
 \usepackage{tabularx}							% Support for break lines inside table cells
 \usepackage{booktabs}							% Useful table styling commands
@@ -34,6 +34,7 @@
 
 % --- Custom styles ---
 \renewcommand{\arraystretch}{1.2}	% Streches the table row height so text is not crammed between the lines
+\MakeOuterQuote{"}	% For csquotes package
 
 % Hyphenations
 \input{misc/hyphenations}
