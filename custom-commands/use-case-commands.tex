@@ -1,0 +1,19 @@
+\newcommand{\useCaseTable}[8] {{
+    \begin{table}[H]
+        \begin{center}
+            \begin{tabularx}{\textwidth}{l X}
+                \toprule
+                \multicolumn{2}{c}{\textbf{#1}} \\ [0.5ex]
+                \midrule
+                Σύντομη περιγραφή         & #2 \\ [0.5ex]
+                Αναφορά ΛΑ                & #3 \\ [0.5ex]
+                Αναφορά ΜΛΑ               & #4 \\ [0.5ex]
+                Πυροδότηση δραστηριότητας & #5 \\ [0.5ex]
+                Προϋπόθεση                & #6 \\ [0.5ex]
+                \bottomrule
+            \end{tabularx}
+        \end{center}
+        \caption{#7.}
+        \label{table:#8}
+    \end{table}
+}}
