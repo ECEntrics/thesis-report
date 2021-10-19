@@ -13,7 +13,27 @@
                 \bottomrule
             \end{tabularx}
         \end{center}
-        \caption{#7.}
+        \caption{#7}
         \label{table:#8}
+    \end{table}
+}}
+
+\newcommand{\useCaseBaseFlowTable}[4] {{
+    \begin{table}[H]
+        \begin{center}
+            \begin{tabularx}{\textwidth}{p{2.25cm} X X}
+                \toprule
+                \multicolumn{3}{c}{\textbf{Βασική ροή}} \\ [0.5ex]
+                \midrule
+                \textbf{Γραμμή}               & \textbf{Ενέργεια χρήστη συστήματος} & \textbf{Απάντηση Συστήματος} \\ [0.5ex]
+                \midrule
+                #1
+                \midrule
+                \textbf{Μετέπειτα κατάσταση:} & \multicolumn{2}{p{\dimexpr\textwidth-2\tabcolsep-0.8pt-2.25cm}}{#2} \\ [0.5ex]
+                \bottomrule
+            \end{tabularx}
+        \end{center}
+        \caption{#3}
+        \label{table:#4}
     \end{table}
 }}
