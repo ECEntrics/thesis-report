@@ -1,0 +1,12 @@
+\begin{sequencediagram}
+    \newthread{actor}{Actor}{}
+    \newinst[3]{concordia}{:Concordia}{}
+    \newinst[2]{eth}{:Ethereum}{}
+
+    \begin{call}{actor}{Submit post vote}{concordia}{Updated topic page}
+
+        \begin{call}{concordia}{Add post vote}{eth}{}
+        \end{call}
+
+    \end{call}
+\end{sequencediagram}

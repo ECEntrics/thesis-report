@@ -68,6 +68,13 @@
 {Σενάριο χρήσης 1 - Εναλλακτική ροή 3}
 {3-4-use-case-sign-up-alternate-flow-3}
 
+\begin{figure}[H]
+    \centering
+    \input{tikz/chapter-3/3-4-use-case-sign-up-sequence-diagram}
+    \caption{Σενάριο χρήσης 1 - Διάγραμμα βασικής ροής}
+    \label{figure:3-4-use-case-sign-up-base-flow-sequence-diagram}
+\end{figure}
+
 % ===== =====
 % Use case 2
 % ===== =====
@@ -121,6 +128,20 @@
 {Σενάριο χρήσης 2 - Εναλλακτική ροή 2}
 {3-4-use-case-create-topic-alternate-flow-2}
 
+\begin{figure}[H]
+    \centering
+    \input{tikz/chapter-3/3-4-use-case-create-topic-sequence-diagram}
+    \caption{Σενάριο χρήσης 2 - Διάγραμμα βασικής ροής}
+    \label{figure:3-4-use-case-create-topic-base-flow-sequence-diagram}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \input{tikz/chapter-3/3-4-use-case-create-topic-alternate-flow-1-sequence-diagram}
+    \caption{Σενάριο χρήσης 2 - Διάγραμμα εναλλακτικής ροής 1}
+    \label{figure:3-4-use-case-create-topic-alternate-flow-1-sequence-diagram}
+\end{figure}
+
 % ===== =====
 % Use case 3
 % ===== =====
@@ -145,6 +166,34 @@
 {Το σύστημα μεταβαίνει στην σελίδα του θέματος.}
 {Σενάριο χρήσης 3 - Βασική ροή}
 {3-4-use-case-fetch-topic-base-flow}
+
+\useCaseAlternateFlowTable
+{1}
+{Το θέμα περιέχει ψηφοφορία.}
+{Εφόσον το θέμα που ανακτήθηκε στη γραμμή 1 της Βασικής Ροής περιέχει ψηφοφορία ανακτώνται οι πληροφορίες της.}
+{
+    1 & - & Το σύστημα ανακτά τα μηνύματα του θέματος αντιγράφοντας τις προσωπικές βάσεις OrbitDb των συγγραφέων. \\ [0.5ex]
+    2 & - & Το σύστημα ανακτά την ψηφοφορία από το blockchain. \\ [0.5ex]
+    3 & - & Το σύστημα ανακτά τις πληροφορίες της ψηφοφορίας αντιγράφοντας την προσωπική βάση OrbitDb του συγγραφέα. \\ [0.5ex]
+    4 & - & Το σύστημα επιβεβαιώνει τις πληροφορίες της ψηφοφορίας με βάση το hash που έχει ανακτηθεί από το blockchain. \\ [0.5ex]
+}
+{Το σενάριο χρήσης τερματίζεται.}
+{Σενάριο χρήσης 3 - Εναλλακτική ροή 1}
+{3-4-use-case-fetch-topic-alternate-flow-1}
+
+\begin{figure}[H]
+    \centering
+    \input{tikz/chapter-3/3-4-use-case-fetch-topic-sequence-diagram}
+    \caption{Σενάριο χρήσης 3 - Διάγραμμα βασικής ροής}
+    \label{figure:3-4-use-case-fetch-topic-base-flow-sequence-diagram}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \input{tikz/chapter-3/3-4-use-case-fetch-topic-alternate-flow-1-sequence-diagram}
+    \caption{Σενάριο χρήσης 3 - Διάγραμμα εναλλακτικής ροής 1}
+    \label{figure:3-4-use-case-fetch-topic-alternate-flow-1-sequence-diagram}
+\end{figure}
 
 % ===== =====
 % Use case 4
@@ -184,6 +233,13 @@
 {Σενάριο χρήσης 4 - Εναλλακτική ροή 1}
 {3-4-use-case-create-post-alternate-flow-1}
 
+\begin{figure}[H]
+    \centering
+    \input{tikz/chapter-3/3-4-use-case-create-post-sequence-diagram}
+    \caption{Σενάριο χρήσης 4 - Διάγραμμα βασικής ροής}
+    \label{figure:3-4-use-case-create-post-base-flow-sequence-diagram}
+\end{figure}
+
 % ===== =====
 % Use case 5
 % ===== =====
@@ -207,6 +263,13 @@
 {Σενάριο χρήσης 5 - Βασική ροή}
 {3-4-use-case-vote-in-poll-base-flow}
 
+\begin{figure}[H]
+    \centering
+    \input{tikz/chapter-3/3-4-use-case-vote-in-poll-sequence-diagram}
+    \caption{Σενάριο χρήσης 5 - Διάγραμμα βασικής ροής}
+    \label{figure:3-4-use-case-vote-in-poll-base-flow-sequence-diagram}
+\end{figure}
+
 % ===== =====
 % Use case 6
 % ===== =====
@@ -228,4 +291,11 @@
 }
 {Το σύστημα ανανεώνει τις ψήφους του μηνύματος.}
 {Σενάριο χρήσης 6 - Βασική ροή}
-{3-4-3-4-use-case-vote-post-base-flow}
+{3-4-use-case-vote-post-base-flow}
+
+\begin{figure}[H]
+    \centering
+    \input{tikz/chapter-3/3-4-use-case-vote-post-sequence-diagram}
+    \caption{Σενάριο χρήσης 6 - Διάγραμμα βασικής ροής}
+    \label{figure:3-4-use-case-vote-post-base-flow-sequence-diagram}
+\end{figure}
