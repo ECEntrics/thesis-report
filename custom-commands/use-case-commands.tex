@@ -37,3 +37,25 @@
         \label{table:#4}
     \end{table}
 }}
+
+\newcommand{\useCaseAlternateFlowTable}[7] {{
+    \begin{table}[H]
+        \begin{center}
+            \begin{tabularx}{\textwidth}{l X X}
+                \toprule
+                \multicolumn{3}{l}{\textbf{Εναλλακτική ροή {#1}:} {#2}} \\ [0.5ex]
+                \midrule
+                \multicolumn{3}{p{\dimexpr\textwidth-2\tabcolsep-0.8pt}}{{#3}} \\ [0.5ex]
+                \midrule
+                \textbf{Γραμμή}               & \textbf{Ενέργεια χρήστη συστήματος} & \textbf{Απάντηση Συστήματος} \\ [0.5ex]
+                \midrule
+                #4 \\ [0.5ex]
+                \midrule
+                \multicolumn{3}{p{\dimexpr\textwidth-2\tabcolsep-0.8pt}}{{#5}} \\ [0.5ex]
+                \bottomrule
+            \end{tabularx}
+        \end{center}
+        \caption{#6}
+        \label{table:#7}
+    \end{table}
+}}
