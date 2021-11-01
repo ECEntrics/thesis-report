@@ -3,6 +3,8 @@
 % ===== =====
 \subsection{Σενάριο χρήσης 2: Δημιουργία νέου θέματος} \label{subsection:3-4-use-case-create-topic}
 
+Το σενάριο χρήσης 2, <ΣΧ-2>, περιγράφει τις διαδοχικές ενέργειες που εκτελούνται για την δημιουργία ενός θέματος. Στους πίνακες \ref{table:3-4-use-case-create-topic} και \ref{table:3-4-use-case-create-topic-base-flow} παρατίθενται οι βασικές πληροφορίες του <ΣΧ-2> και οι ενέργειες της βασικής ροής αντίστοιχα, ενώ στο σχήμα \ref{figure:3-4-use-case-create-topic-base-flow-sequence-diagram} φαίνεται το διάγραμμα της βασικής ροής.
+
 \useCaseTable
 {Δημιουργώ νέο θέμα}
 {Στόχος του σεναρίου χρήσης είναι ο χρήστης να μπορεί να δημιουργήσει νέο θέμα.}
@@ -12,6 +14,8 @@
 {Ο χρήστης να έχει συνδεθεί στην εφαρμογή και να βρίσκεται στην αρχική σελίδα.}
 {Σενάριο χρήσης 2, δημιουργία νέου θέματος.}
 {\label{table:3-4-use-case-create-topic}}
+
+% ===== Base flow =====
 
 \useCaseBaseFlowTable
 {
@@ -24,6 +28,17 @@
 {Το σύστημα μεταβαίνει στην σελίδα του νέου θέματος.}
 {Σενάριο χρήσης 2 - Βασική ροή}
 {\label{table:3-4-use-case-create-topic-base-flow}}
+
+\begin{figure}[H]
+    \centering
+    \input{tikz/chapter-3/3-4-use-case-create-topic-sequence-diagram}
+    \caption{Σενάριο χρήσης 2 - Διάγραμμα βασικής ροής}
+    \label{figure:3-4-use-case-create-topic-base-flow-sequence-diagram}
+\end{figure}
+
+% ===== Alternate flow =====
+
+Το <ΣΧ-2> περιέχει επίσης δύο εναλλακτικές ροές που μπορεί να προκύψουν βάσει των επιλογών του χρήστη και οι οποίες περιγράφονται στους πίνακες \ref{table:3-4-use-case-create-topic-alternate-flow-1} και \ref{table:3-4-use-case-create-topic-alternate-flow-2}. Η εναλλακτική ροή 1 φαίνεται επίσης στο σχήμα \ref{figure:3-4-use-case-create-topic-alternate-flow-1-sequence-diagram} όπου παρουσιάζεται το διάγραμμα ροής της.
 
 \useCaseAlternateFlowTable
 {1}
@@ -40,6 +55,13 @@
 {Σενάριο χρήσης 2 - Εναλλακτική ροή 1}
 {\label{table:3-4-use-case-create-topic-alternate-flow-1}}
 
+\begin{figure}[H]
+    \centering
+    \input{tikz/chapter-3/3-4-use-case-create-topic-alternate-flow-1-sequence-diagram}
+    \caption{Σενάριο χρήσης 2 - Διάγραμμα εναλλακτικής ροής 1}
+    \label{figure:3-4-use-case-create-topic-alternate-flow-1-sequence-diagram}
+\end{figure}
+
 \useCaseAlternateFlowTable
 {2}
 {Ο χρήστης πατάει το κουμπί ``Άκυρο''.}
@@ -50,17 +72,3 @@
 {Το σενάριο χρήσης τερματίζεται.}
 {Σενάριο χρήσης 2 - Εναλλακτική ροή 2}
 {\label{table:3-4-use-case-create-topic-alternate-flow-2}}
-
-\begin{figure}[H]
-    \centering
-    \input{tikz/chapter-3/3-4-use-case-create-topic-sequence-diagram}
-    \caption{Σενάριο χρήσης 2 - Διάγραμμα βασικής ροής}
-    \label{figure:3-4-use-case-create-topic-base-flow-sequence-diagram}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \input{tikz/chapter-3/3-4-use-case-create-topic-alternate-flow-1-sequence-diagram}
-    \caption{Σενάριο χρήσης 2 - Διάγραμμα εναλλακτικής ροής 1}
-    \label{figure:3-4-use-case-create-topic-alternate-flow-1-sequence-diagram}
-\end{figure}
