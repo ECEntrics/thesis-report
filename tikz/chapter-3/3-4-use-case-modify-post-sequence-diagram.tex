@@ -1,0 +1,16 @@
+\begin{sequencediagram}
+    \newthread{actor}{Actor}{}
+    \newinst[4]{concordia}{:Concordia}{}
+    \newinst[1]{eth}{:Ethereum}{}
+    \newinst[2]{orbit}{:OrbitDb}{}
+
+    \begin{call}{actor}{Modify post}{concordia}{Post modification form}
+    \end{call}
+
+    \begin{call}{actor}{Submit}{concordia}{Updated topic page}
+
+        \begin{call}{concordia}{Save modified post information}{orbit}{}
+        \end{call}
+
+    \end{call}
+\end{sequencediagram}
