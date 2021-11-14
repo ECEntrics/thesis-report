@@ -1,18 +1,18 @@
 % ===== =====
-% Use case 3
+% Use case 4
 % ===== =====
-\subsection{Σενάριο χρήσης 3: Ανάκτηση θέματος} \label{subsection:3-4-use-case-fetch-topic}
+\subsection{Σενάριο χρήσης 4: Ανάκτηση θέματος} \label{subsection:3-4-use-case-fetch-topic}
 
-Το σενάριο χρήσης 3, <ΣΧ-3>, περιγράφει τις διαδοχικές ενέργειες που εκτελούνται για την ανάκτηση ενός θέματος. Στους πίνακες \ref{table:3-4-use-case-fetch-topic} και \ref{table:3-4-use-case-fetch-topic-base-flow} παρατίθενται οι βασικές πληροφορίες του <ΣΧ-3> και οι ενέργειες της βασικής ροής αντίστοιχα, ενώ στο σχήμα \ref{figure:3-4-use-case-fetch-topic-base-flow-sequence-diagram} φαίνεται το διάγραμμα της βασικής ροής.
+Το σενάριο χρήσης 4, <ΣΧ-4>, περιγράφει τις διαδοχικές ενέργειες που εκτελούνται για την ανάκτηση ενός θέματος. Στους πίνακες \ref{table:3-4-use-case-fetch-topic} και \ref{table:3-4-use-case-fetch-topic-base-flow} παρατίθενται οι βασικές πληροφορίες του <ΣΧ-4> και οι ενέργειες της βασικής ροής αντίστοιχα, ενώ στο σχήμα \ref{figure:3-4-use-case-fetch-topic-base-flow-sequence-diagram} φαίνεται το διάγραμμα της βασικής ροής.
 
 \useCaseTable
 {Ανακτώ ένα θέμα}
 {Στόχος του σεναρίου χρήσης είναι ο επισκέπτης ή ο χρήστης να μπορεί να ανακτήσει ένα θέμα.}
-{TODO}
-{TODO}
+{\ref{srs:functional-srs-browse-topics}}
+{-}
 {Ο επισκέπτης ή χρήστης πατάει σε ένα από τα θέματα.}
 {Ο επισκέπτης ή χρήστης πρέπει να έχει ανοίξει την σελίδα της εφαρμογής.}
-{Σενάριο χρήσης 3, ανάκτηση θέματος.}
+{Σενάριο χρήσης 4, ανάκτηση θέματος.}
 {\label{table:3-4-use-case-fetch-topic}}
 
 % ===== Base flow =====
@@ -24,19 +24,19 @@
     2 & -                                                 & Το σύστημα ανακτά τα μηνύματα του θέματος αντιγράφοντας τις προσωπικές βάσεις OrbitDb των συγγραφέων. \\ [0.5ex]
 }
 {Το σύστημα μεταβαίνει στην σελίδα του θέματος.}
-{Σενάριο χρήσης 3 - Βασική ροή}
+{Σενάριο χρήσης 4 - Βασική ροή}
 {\label{table:3-4-use-case-fetch-topic-base-flow}}
 
 \begin{figure}[H]
     \centering
     \input{tikz/chapter-3/3-4-use-case-fetch-topic-sequence-diagram}
-    \caption{Σενάριο χρήσης 3 - Διάγραμμα βασικής ροής}
+    \caption{Σενάριο χρήσης 4 - Διάγραμμα βασικής ροής}
     \label{figure:3-4-use-case-fetch-topic-base-flow-sequence-diagram}
 \end{figure}
 
 % ===== Alternate flow =====
 
-Το <ΣΧ-3> περιέχει επίσης μία εναλλακτική ροή που μπορεί να προκύψει βάσει των επιλογών του χρήστη και η οποία περιγράφεται στον πίνακα \ref{table:3-4-use-case-fetch-topic-alternate-flow-1}. Η εναλλακτική ροή 1 φαίνεται επίσης στο σχήμα \ref{figure:3-4-use-case-fetch-topic-alternate-flow-1-sequence-diagram} όπου παρουσιάζεται το διάγραμμα ροής της.
+Το <ΣΧ-4> περιέχει επίσης μία εναλλακτική ροή που μπορεί να προκύψει βάσει των επιλογών του χρήστη και η οποία περιγράφεται στον πίνακα \ref{table:3-4-use-case-fetch-topic-alternate-flow-1}. Η εναλλακτική ροή 1 φαίνεται επίσης στο σχήμα \ref{figure:3-4-use-case-fetch-topic-alternate-flow-1-sequence-diagram} όπου παρουσιάζεται το διάγραμμα ροής της.
 
 \useCaseAlternateFlowTable
 {1}
@@ -49,12 +49,12 @@
     4 & - & Το σύστημα επιβεβαιώνει τις πληροφορίες της ψηφοφορίας με βάση το hash που έχει ανακτηθεί από το blockchain. \\ [0.5ex]
 }
 {Το σενάριο χρήσης τερματίζεται.}
-{Σενάριο χρήσης 3 - Εναλλακτική ροή 1}
+{Σενάριο χρήσης 4 - Εναλλακτική ροή 1}
 {\label{table:3-4-use-case-fetch-topic-alternate-flow-1}}
 
 \begin{figure}[H]
     \centering
     \input{tikz/chapter-3/3-4-use-case-fetch-topic-alternate-flow-1-sequence-diagram}
-    \caption{Σενάριο χρήσης 3 - Διάγραμμα εναλλακτικής ροής 1}
+    \caption{Σενάριο χρήσης 4 - Διάγραμμα εναλλακτικής ροής 1}
     \label{figure:3-4-use-case-fetch-topic-alternate-flow-1-sequence-diagram}
 \end{figure}

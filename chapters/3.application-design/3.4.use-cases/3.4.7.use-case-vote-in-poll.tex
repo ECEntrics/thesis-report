@@ -1,18 +1,18 @@
 % ===== =====
-% Use case 5
+% Use case 7
 % ===== =====
-\subsection{Σενάριο χρήσης 5: Ψήφιση σε ψηφοφορία} \label{subsection:3-4-use-case-vote-in-poll}
+\subsection{Σενάριο χρήσης 7: Ψήφιση σε ψηφοφορία} \label{subsection:3-4-use-case-vote-in-poll}
 
-Το σενάριο χρήσης 5, <ΣΧ-5>, περιγράφει τις διαδοχικές ενέργειες που εκτελούνται για την ψήφιση σε μία ψηφοφορία. Στους πίνακες \ref{table:3-4-use-case-vote-in-poll} και \ref{table:3-4-use-case-vote-in-poll-base-flow} παρατίθενται οι βασικές πληροφορίες του <ΣΧ-5> και οι ενέργειες της βασικής ροής αντίστοιχα, ενώ στο σχήμα \ref{figure:3-4-use-case-vote-in-poll-base-flow-sequence-diagram} φαίνεται το διάγραμμα της βασικής ροής.
+Το σενάριο χρήσης 7, <ΣΧ-7>, περιγράφει τις διαδοχικές ενέργειες που εκτελούνται για την ψήφιση σε μία ψηφοφορία. Στους πίνακες \ref{table:3-4-use-case-vote-in-poll} και \ref{table:3-4-use-case-vote-in-poll-base-flow} παρατίθενται οι βασικές πληροφορίες του <ΣΧ-7> και οι ενέργειες της βασικής ροής αντίστοιχα, ενώ στο σχήμα \ref{figure:3-4-use-case-vote-in-poll-base-flow-sequence-diagram} φαίνεται το διάγραμμα της βασικής ροής.
 
 \useCaseTable
 {Ψηφίζω σε ψηφοφορία}
 {Στόχος του σεναρίου χρήσης είναι ο χρήστης να μπορεί να ψηφίσει σε μία ψηφοφορία.}
-{TODO}
-{TODO}
+{\ref{srs:functional-srs-vote-polls}}
+{\ref{srs:non-functional-srs-minimize-fees}}
 {Ο χρήστης πατάει το κουμπί ψηφοφορίας.}
 {Ο χρήστης να έχει συνδεθεί στην εφαρμογή και να βρίσκεται στην σελίδα ενός θέματος το οποίο περιλαμβάνει ψηφοφορία.}
-{Σενάριο χρήσης 5, ψήφιση σε ψηφοφορία.}
+{Σενάριο χρήσης 7, ψήφιση σε ψηφοφορία.}
 {\label{table:3-4-use-case-vote-in-poll}}
 
 % ===== Base flow =====
@@ -22,12 +22,12 @@
     1 & Ο χρήστης πατάει το κουμπί της επιλογής που επιθυμεί να ψηφίσει και πατάει το κουμπί ``Υποβολή''. & Το σύστημα εισάγει νέα ψήφο στο blockchain. \\ [0.5ex]
 }
 {Το σύστημα ανανεώνει τις πληροφορίες της ψηφοφορίας.}
-{Σενάριο χρήσης 5 - Βασική ροή}
+{Σενάριο χρήσης 7 - Βασική ροή}
 {\label{table:3-4-use-case-vote-in-poll-base-flow}}
 
 \begin{figure}[H]
     \centering
     \input{tikz/chapter-3/3-4-use-case-vote-in-poll-sequence-diagram}
-    \caption{Σενάριο χρήσης 5 - Διάγραμμα βασικής ροής}
+    \caption{Σενάριο χρήσης 7 - Διάγραμμα βασικής ροής}
     \label{figure:3-4-use-case-vote-in-poll-base-flow-sequence-diagram}
 \end{figure}
