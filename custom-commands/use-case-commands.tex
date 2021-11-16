@@ -1,0 +1,61 @@
+\newcommand{\useCaseTable}[8] {{
+    \begin{table}[H]
+        \begin{center}
+            \begin{tabularx}{\textwidth}{l X}
+                \toprule
+                \multicolumn{2}{c}{\textbf{#1}} \\ [0.5ex]
+                \midrule
+                Σύντομη περιγραφή         & #2 \\ [0.5ex]
+                Αναφορά ΛΑ                & #3 \\ [0.5ex]
+                Αναφορά ΜΛΑ               & #4 \\ [0.5ex]
+                Πυροδότηση δραστηριότητας & #5 \\ [0.5ex]
+                Προϋπόθεση                & #6 \\ [0.5ex]
+                \bottomrule
+            \end{tabularx}
+        \end{center}
+        \caption{#7}
+        #8
+    \end{table}
+}}
+
+\newcommand{\useCaseBaseFlowTable}[4] {{
+    \begin{table}[H]
+        \begin{center}
+            \begin{tabularx}{\textwidth}{p{2.25cm} X X}
+                \toprule
+                \multicolumn{3}{c}{\textbf{Βασική ροή}} \\ [0.5ex]
+                \midrule
+                \textbf{Γραμμή}               & \textbf{Ενέργεια χρήστη συστήματος} & \textbf{Απάντηση Συστήματος} \\ [0.5ex]
+                \midrule
+                #1
+                \midrule
+                \textbf{Μετέπειτα κατάσταση:} & \multicolumn{2}{p{\dimexpr\textwidth-2\tabcolsep-0.8pt-2.25cm}}{#2} \\ [0.5ex]
+                \bottomrule
+            \end{tabularx}
+        \end{center}
+        \caption{#3}
+        #4
+    \end{table}
+}}
+
+\newcommand{\useCaseAlternateFlowTable}[7] {{
+    \begin{table}[H]
+        \begin{center}
+            \begin{tabularx}{\textwidth}{l X X}
+                \toprule
+                \multicolumn{3}{l}{\textbf{Εναλλακτική ροή {#1}:} {#2}} \\ [0.5ex]
+                \midrule
+                \multicolumn{3}{p{\dimexpr\textwidth-2\tabcolsep-0.8pt}}{{#3}} \\ [0.5ex]
+                \midrule
+                \textbf{Γραμμή}               & \textbf{Ενέργεια χρήστη συστήματος} & \textbf{Απάντηση Συστήματος} \\ [0.5ex]
+                \midrule
+                #4 \\ [0.5ex]
+                \midrule
+                \multicolumn{3}{p{\dimexpr\textwidth-2\tabcolsep-0.8pt}}{{#5}} \\ [0.5ex]
+                \bottomrule
+            \end{tabularx}
+        \end{center}
+        \caption{#6}
+        #7
+    \end{table}
+}}
