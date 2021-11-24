@@ -1,9 +1,9 @@
 % ===== =====
 % Use case 1
 % ===== =====
-\subsection{Σενάριο χρήσης 1: Εγγραφή χρήστη} \label{subsection:3-4-use-case-signup}
+\subsection{Σενάριο χρήσης 1: Εγγραφή χρήστη} \label{subsection:3-6-use-case-signup}
 
-Το σενάριο χρήσης 1, <ΣΧ-1>, περιγράφει τις διαδοχικές ενέργειες που εκτελούνται για την εγγραφή ενός χρήστη στο σύστημα. Στους πίνακες \ref{table:3-4-use-case-sign-up} και \ref{table:3-4-use-case-sign-up-base-flow} παρατίθενται οι βασικές πληροφορίες του <ΣΧ-1> και οι ενέργειες της βασικής ροής αντίστοιχα, ενώ στο σχήμα \ref{figure:3-4-use-case-sign-up-base-flow-sequence-diagram} φαίνεται το διάγραμμα της βασικής ροής.
+Το σενάριο χρήσης 1, <ΣΧ-1>, περιγράφει τις διαδοχικές ενέργειες που εκτελούνται για την εγγραφή ενός χρήστη στο σύστημα. Στους πίνακες \ref{table:3-6-use-case-sign-up} και \ref{table:3-6-use-case-sign-up-base-flow} παρατίθενται οι βασικές πληροφορίες του <ΣΧ-1> και οι ενέργειες της βασικής ροής αντίστοιχα, ενώ στο σχήμα \ref{figure:3-6-use-case-sign-up-base-flow-sequence-diagram} φαίνεται το διάγραμμα της βασικής ροής.
 
 \useCaseTable
 {Εγγράφομαι στο σύστημα}
@@ -13,7 +13,7 @@
 {Ο επισκέπτης πατάει το κουμπί εγγραφή.}
 {Ο επισκέπτης πρέπει να έχει ανοίξει την σελίδα της εφαρμογής.}
 {Σενάριο χρήσης 1, εγγραφή χρήστη στο σύστημα.}
-{\label{table:3-4-use-case-sign-up}}
+{\label{table:3-6-use-case-sign-up}}
 
 % ===== Base flow =====
 
@@ -31,18 +31,18 @@
 }
 {Το σύστημα μεταβαίνει στην αρχική σελίδα της εφαρμογής.}
 {Σενάριο χρήσης 1 - Βασική ροή}
-{\label{table:3-4-use-case-sign-up-base-flow}}
+{\label{table:3-6-use-case-sign-up-base-flow}}
 
 \begin{figure}[H]
     \centering
-    \input{tikz/chapter-3/3-4-use-case-sign-up-sequence-diagram}
+    \input{tikz/chapter-3/3-6-use-case-sign-up-sequence-diagram}
     \caption{Σενάριο χρήσης 1 - Διάγραμμα βασικής ροής}
-    \label{figure:3-4-use-case-sign-up-base-flow-sequence-diagram}
+    \label{figure:3-6-use-case-sign-up-base-flow-sequence-diagram}
 \end{figure}
 
 % ===== Alternate flows =====
 
-Το <ΣΧ-1> περιέχει επίσης τρεις εναλλακτικές ροές που μπορεί να προκύψουν βάσει των επιλογών του χρήστη και οι οποίες περιγράφονται στους πίνακες \ref{table:3-4-use-case-sign-up-alternate-flow-1}, \ref{table:3-4-use-case-sign-up-alternate-flow-2} και \ref{table:3-4-use-case-sign-up-alternate-flow-3}.
+Το <ΣΧ-1> περιέχει επίσης τρεις εναλλακτικές ροές που μπορεί να προκύψουν βάσει των επιλογών του χρήστη και οι οποίες περιγράφονται στους πίνακες \ref{table:3-6-use-case-sign-up-alternate-flow-1}, \ref{table:3-6-use-case-sign-up-alternate-flow-2} και \ref{table:3-6-use-case-sign-up-alternate-flow-3}.
 
 \useCaseAlternateFlowTable
 {1}
@@ -53,7 +53,7 @@
 }
 {Το σύστημα επιστρέφει στη γραμμή 1 της βασικής ροής.}
 {Σενάριο χρήσης 1 - Εναλλακτική ροή 1}
-{\label{table:3-4-use-case-sign-up-alternate-flow-1}}
+{\label{table:3-6-use-case-sign-up-alternate-flow-1}}
 
 \useCaseAlternateFlowTable
 {2}
@@ -64,7 +64,7 @@
 }
 {Το σενάριο χρήσης τερματίζεται.}
 {Σενάριο χρήσης 1 - Εναλλακτική ροή 2}
-{\label{table:3-4-use-case-sign-up-alternate-flow-2}}
+{\label{table:3-6-use-case-sign-up-alternate-flow-2}}
 
 \useCaseAlternateFlowTable
 {3}
@@ -75,4 +75,4 @@
 }
 {Το σενάριο χρήσης τερματίζεται.}
 {Σενάριο χρήσης 1 - Εναλλακτική ροή 3}
-{\label{table:3-4-use-case-sign-up-alternate-flow-3}}
+{\label{table:3-6-use-case-sign-up-alternate-flow-3}}

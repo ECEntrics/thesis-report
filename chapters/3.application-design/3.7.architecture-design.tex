@@ -1,8 +1,11 @@
-\section{Λογικά μέρη} \label{section:3-1-logical-parts}
+\section{Αρχιτεκτονική σχεδίαση} \label{section:3-7-architecture-design}
 
-% TODO: add software patterns and stuff...
-% https://en.wikipedia.org/wiki/Software_development_process#Spiral_development
+Στο κεφάλαιο αυτό θα περιγραφεί η αρχιτεκτονική του συστήματος, όπως αυτό σχεδιάστηκε αρχικά. Η αρχιτεκτονική αυτή είναι πρώιμη και δεν αποτελεί την τελική υλοποίηση της πλατφόρμας στο σύνολό της. Μέρη της πρώιμης αρχιτεκτονικής είναι διαφορετικά από αυτά της τελικής η οποία περιγράφεται σε επόμενο κεφάλαιο.
+
 % TODO: remove future tense used in this chapter
+% TODO: add a brand new diagram!
+
+% Temporary Paste: Λογικά μέρη
 
 Η πλατφόρμα χωρίζεται σε δύο λογικά μέρη τα οποία θα αναλυθούν σε λεπτομέρεια στα επόμενα κεφάλαια:
 
@@ -21,13 +24,7 @@
 ενισχύει την διαφάνεια των διαδικασιών κάνοντας το επιχείρημα της ισότητας του λόγου πιο δυνατό. Τα contracts αυτά θα
 δέχονται transactions από τους χρήστες και θα εγγράφουν τα αποτελέσματα στο Storage Layer του blockchain:
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=.75\textwidth]{assets/figures/chapter-3/simple_dapp_stack}
-    \caption{Ethereum logo}
-\end{figure}
-
-TODO: remove AUTH stuff, make it more abstract
+% TODO: remove AUTH stuff, make it more abstract
 
 Το πρόβλημα αυτής της προσέγγισης είναι πως, για τη λειτουργία της, απαιτείται για κάθε συναλλαγή (transaction) οι
 χρήστες να καταβάλουν ένα τέλος. Το τέλος αυτό αφορά τα fees που είναι αναγκαία για την περάτωση των συναλλαγών. Παρόλο
