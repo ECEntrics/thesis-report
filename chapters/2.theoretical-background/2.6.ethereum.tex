@@ -2,14 +2,14 @@
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=2cm]{assets/figures/ethereum-logo.png}
+	\includegraphics[width=2cm]{assets/figures/chapter-2/2.6.ethereum-logo.png}
 	\caption{Ethereum logo}
 \end{figure}
 
 Το Ethereum είναι ένα δημόσιο blockchain ανοιχτού κώδικα με εγγενές κρυπτονόμισμα το Ether (ETH). Παρέχει μία προγραμματιστική πλατφόρμα με ενσωματωμένη μία Turing-complete γλώσσα προγραμματισμού, που μπορεί να χρησιμοποιηθεί για τη δημιουργία αποκεντρωμένων εφαρμογών (Decentralized Applications ή DApps) μέσω της χρήσης "έξυπνων συμβολαίων" (smart contracts).\cite{2.6-ethereum-whitepaper}
 
 \subsection{Λογαριασμοί} \label{subsection:2-6-1-ethereum-accounts}
-Στο Ethereum blockchain οι λογαριασμοί αποτελούν οντότητες οι οποίες μπορούν να δέχονται, να κρατούν και να στέλνουν ETH και tokens, καθώς και να αλληλεπιδρούν με smart contracts.\cite{2.6-ethereum-documentation} Χωρίζονται σε δύο κατηγορίες: στους λογαριασμούς εξωτερικής κατοχής (externally owned accounts ή EOAs) και στους λογαριασμούς συμβολαίων (contract accounts).
+Στο Ethereum blockchain οι λογαριασμοί αποτελούν οντότητες οι οποίες μπορούν να δέχονται, να κρατούν και να στέλνουν ETH και tokens, καθώς και να αλληλεπιδρούν με smart contracts.\cite{2.6-ethereum-documentation} Χωρίζονται σε δύο κατηγορίες: στους λογαριασμούς εξωτερικής κατοχής (\textenglish{externally owned accounts} ή EOAs) και στους λογαριασμούς συμβολαίων (contract accounts).
 
 Οι λογαριασμοί εξωτερικής κατοχής δημιουργούνται χωρίς κόστος και ελέγχονται μέσω ιδιωτικών κλειδιών. Μπορούν να πραγματοποιούν μόνο συναλλαγές μεταφοράς ETH ή κάποιου token.
 
@@ -44,7 +44,7 @@ ECDSA (βλ. ενότητα \ref{section:2-2-asymmetric-cryptography}). Έτσι
 Η σύνταξη των smart contracts γίνεται κατά βάση σε γλώσσες υψηλού επιπέδου και, συγκεκριμένα, στις Solidity και Vyper. Πριν την εγγραφή τους στο blockchain, μεταγλωττίζονται σε εμηνεύσιμο από την EVM bytecode, η οποία είναι υπεύθυνη για την αποθήκευση και την εκτέλεσή του (βλ. υποενότητα \ref{subsection:2-6-5-evm}).
 
 \subsection{DApps}
-Οι DApps στο οικοσύστημα του Ethereum είναι εφαρμογές οι οποίες συνδυάζουν smart contracts και frontend UIs. Είναι ντετερμινιστικές, Turing-complete και εκτελούνται απομονωμένα στην EVM.\cite{2.6-ethereum-documentation}
+Οι DApps στο οικοσύστημα του Ethereum είναι εφαρμογές οι οποίες συνδυάζουν \textenglish{smart contracts} και  \textenglish{frontend UIs}. Είναι ντετερμινιστικές, Turing-complete και εκτελούνται απομονωμένα στην EVM.\cite{2.6-ethereum-documentation}
 
 Πέρα από τα θετικά χαρακτηριστικά των DApps που αναλύθηκαν στην ενότητα \ref{section:1-2-decentralization} (ανοχή σε σφάλματα, αντοχή σε επιθέσεις, απουσία ανάγκης εκχώρησης εμπιστοσύνης, αντίσταση σε συμπαιγνίες), τα Ethereum DApps διαθέτουν επιπλέον όλα τα πλεονεκτήματα των blockchain και των smart contract, όπως μηδενικό downtime, πλήρη ακεραιότητα δεδομένων και επαληθεύσιμη συμπεριφορά.
 
