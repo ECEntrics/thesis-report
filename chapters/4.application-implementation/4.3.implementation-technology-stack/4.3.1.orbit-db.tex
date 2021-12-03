@@ -1,14 +1,10 @@
 \subsection{OrbitDB} \label{subsection:4-3-1-orbit-db}
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=2cm]{assets/figures/chapter-4/4.3.orbitdb-logo.png}
-	\caption{OrbitDB logo}
-\end{figure}
+\logo{chapter-4/4.3.orbitdb-logo}{OrbitDB logo}
 
 Η OrbitDB είναι μία P2P βάση δεδομένων ανοιχτού κώδικα. Χρησιμοποιεί το IPFS για την αποθήκευση των δεδομένων και το IPFS Pubsub για τον αυτόματο συγχρονισμό των βάσεων δεδομένων μεταξύ των peers. Είναι τελικά συνεπής (eventually consistent) και χρησιμοποιεί CRDTs (Conflict-Free Replicated Data Types) για συγχωνεύσεις βάσεων δεδομένων χωρίς συγκρούσεις, πράγμα που την καθιστά εξαιρετική επιλογή για DApps και offline-first web applications.\cite{4.3-orbitdb}
 
-Κάποια Βασικά χαρακτηριστικά της είναι τα εξής:
+Κάποια βασικά χαρακτηριστικά της είναι τα εξής:
 \begin{itemize}
 	\item \textbf{Stores}: Η OrbitDB παρέχει διάφορους τύπους βάσεων (stores) για διαφορετικά μοντέλα δεδομένων και περιπτώσεις χρήσης:
 	
@@ -28,9 +24,9 @@
 	Η μορφή του έχει ως εξής\footnote{Βλ. και \url{https://github.com/orbitdb/orbit-db-identity-provider}}:
 	
 	\begin{enumitemcenteredfigure}
-		\simplelisting[width=15cm]{orbit-db-identity.js}
+		\simplelisting[width=.95\textwidth]{orbit-db-identity.js}
 		\caption{OrbitDB Identity}
 	\end{enumitemcenteredfigure}
 
-	\item \textbf{Access Control}: Κατά τη δημιουργία μίας βάσης μπορούν να οριστούν όσοι θα έχουν δικαίωμα να γράψουν σε αυτή μέσω ενός ελεγκτή πρόσβασης (access controller). Ο ελεγκτής θα περιλαμβάνει τα public keys τους, τα οποία μπορούν να ανακτηθούν από το identity του καθενός. Από προεπιλογή και αν δεν ορίζεται διαφορετικά, δίνεται πρόσβαση εγγραφής μόνο στον δημιουργό της βάσης.
+	\item \textbf{Access Control}: Κατά τη δημιουργία μίας βάσης μπορούν να οριστούν όσοι θα έχουν δικαίωμα εγγραφής σε αυτή, μέσω ενός ελεγκτή πρόσβασης (access controller). Ο ελεγκτής θα περιλαμβάνει τα public keys τους, τα οποία μπορούν να ανακτηθούν από το identity του καθενός. Από προεπιλογή και αν δεν ορίζεται διαφορετικά, δίνεται πρόσβαση εγγραφής μόνο στον δημιουργό της βάσης.
 \end{itemize}
