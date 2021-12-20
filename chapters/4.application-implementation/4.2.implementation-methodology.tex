@@ -24,9 +24,27 @@
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=.75\textwidth]{assets/figures/chapter-4/4.2.implementation-methodology-kanban.png}
+    \includegraphics[width=.8\textwidth]{assets/figures/chapter-4/4.2.implementation-methodology-kanban.png}
     \caption{Στιγμιότυπο οθόνης της διαδικτυακής υπηρεσίας Trello που χρησιμοποιήθηκε για την υλοποίηση του Scrum}
     \label{figure:4.2.implementation-methodology-kanban}
 \end{figure}
 
-TODO: add continuous integration
+Κατά την διαδικασία της ανάπτυξης του κώδικα, εφαρμόστηκαν επίσης οι τακτικές που ορίζονται από το DevOps σε ό,τι αφορά το deployment των υπηρεσιών. Το DevOps ορίζει διάφορα εργαλεία που αποσκοπούν στην απρόσκοπτη, αυτοματοποιημένη και γρήγορα ενσωμάτωση του κώδικα από το στάδιο της συγγραφής μέχρι την ολοκλήρωση και εγκατάσταση. Τα εργαλεία που χρησιμοποιήθηκαν εδώ είναι:
+
+\begin{itemize}
+    \item συνεχής έλεγχος (continuous testing)
+    \item συνεχής ολοκλήρωση (continuous integration)
+    \item συνεχής παράδοση (continuous delivery)
+    \item συνεχής εγκατάσταση (continuous deployment)
+\end{itemize}
+
+Για τη υλοποίηση των τακτικών αυτών επιλέχθηκε μετά από εκτενή έρευνα η πλατφόρμα Jenkins. Το Jenkins συνδυάστηκε με την πλατφόρμα εικονοποίησης Docker ώστε να ακολουθηθούν οι τελευταίες ενδεδειγμένες πρακτικές της βιομηχανίας. Έγινε συγγραφή του αρχείου Jenkinsfile το οποίο περιγράφει με κώδικα την ροή εργασιών (pipeline) που πρέπει να ακολουθηθεί μετά από κάθε αλλαγή στον κώδικα. Η εκτέλεση του pipeline πραγματοποιείται αυτόματα από το Jenkins.
+
+Αρχικά εκτελείται το βήμα "Version", το οποίο συλλέγει διάφορα στοιχεία σχετικά με την εκτέλεση του pipeline όπως ποιο είναι το κλαδί του κώδικα που πυροδότησε την ροή και ποια από τα πακέτα λογισμικού που περιλαμβάνονται στο git repository περιέχουν αλλαγές. Έπειτα εκτελείται το στάδιο "TEST" το οποίο περιέχει δύο βήματα που εκτελούνται παράλληλα και πραγματοποιούν έλεγχο του κώδικα των πακέτων. Αν το κλαδί πυροδότησης είναι ένα feature branch η ροή σταματά εδώ, ενώ αν πρόκειται για ένα από τα βασικά κλαδιά (master ή develop) τότε η ροή συνεχίζει με το στάδιο "BUILD". Στο στάδιο "BUILD" εκτελούνται παράλληλα τα βήματα που χτίζουν τα docker images των πακέτων εκείνων τα οποία περιέχουν αλλαγές. Στο στάδιο "PUBLISH", αν το κλαδί πυροδότησης είναι το κύριο κλαδί παραγωγής (master), τότε εκτελούνται παράλληλα βήματα τα οποία δημοσιεύουν τα docker images που δημιουργήθηκαν στο αποθετήριο Dockerhub. Τέλος, εκτελείται το στάδιο "DEPLOY", κατά το οποίο πραγματοποιείται η εγκατάσταση των υπηρεσιών στο ανάλογο περιβάλλον, staging για το κλαδί develop και production για το κλαδί master.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.8\textwidth]{assets/figures/chapter-4/4-2-implementation-methodology-jenkins-pipeline.png}
+    \caption{Διάγραμμα ροής εργασιών Jenkins}
+    \label{figure:4.2.implementation-methodology-jenkins-pipeline}
+\end{figure}
