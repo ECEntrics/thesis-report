@@ -1,0 +1,55 @@
+% Packages used
+
+% Used for flexibility, so other types of documents can have their own preambles (e.g. presentations)
+\usepackage[subpreambles=true]{standalone}
+
+% Used for all the files inside thesis directory
+\usepackage{subfiles}	%TODO: possibly unused (remove?)
+
+% Paper size and margins
+\usepackage{geometry}
+
+% --- Languages & Fonts ---
+\usepackage{polyglossia}
+\input{misc/polyglossia-setup}
+\usepackage{fontawesome5}
+
+% --- Styling ---
+\usepackage{hyperref}							% Extensive support for hypertext
+\usepackage{authblk}							% Support for footnote style author/affiliation
+\usepackage{enumitem}							% For item lists
+\usepackage{custom-packages/greek-enumerate}	% Greek enumeration for ordered item lists
+\usepackage{float}								% For \begin{figure}[H]
+\usepackage[font={footnotesize, it}]{caption}	% For captions under figures
+\usepackage{tabularx}							% Support for break lines inside table cells
+\usepackage{multirow, booktabs}					% Useful table styling commands
+\usepackage[flushleft]{threeparttable}			% Table footnotes
+\usepackage[dvipsnames]{xcolor}					% Text colors
+\usepackage{minted}								% Source code highlighting (make sure to add -shell-escape flag!)
+\usepackage [autostyle]{csquotes}
+\usepackage{tcolorbox}							% Colored boxes
+\tcbuselibrary{minted}							% Make tcolorbox work with minted
+\usepackage{graphicx}
+
+% --- TikZ and UML diagrams
+\usepackage{pgf-umlsd}
+
+% --- Bibliography ---
+\usepackage[sorting=none]{biblatex}
+
+% --- Custom commands ---
+\input{custom-commands/custom-title-page}
+\input{custom-commands/custom-lists}
+\input{custom-commands/custom-listings}
+\input{custom-commands/custom-logos}
+\input{custom-commands/custom-enumitem}
+\input{custom-commands/srs-commands}
+\input{custom-commands/use-case-commands}
+\input{custom-commands/custom-spheading}
+
+% --- Custom styles ---
+\renewcommand{\arraystretch}{1.2}	% Streches the table row height so text is not crammed between the lines
+\MakeOuterQuote{"}	% For csquotes package
+
+% Hyphenations
+\input{misc/hyphenations}
