@@ -280,3 +280,6 @@ TSWLatexianTemp*
 
 output
 Makefile
+.idea
+*.sublime-project
+*.sublime-workspace
