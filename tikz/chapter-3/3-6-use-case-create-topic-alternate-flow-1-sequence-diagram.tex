@@ -1,0 +1,28 @@
+\begin{sequencediagram}
+    \newthread{actor}{Actor}{}
+    \newinst[4]{concordia}{:Concordia}{}
+    \newinst[2]{eth}{:Ethereum}{}
+    \newinst[1]{orbit}{:OrbitDb}{}
+
+    \begin{call}{actor}{Create topic}{concordia}{Topic creation form}
+    \end{call}
+
+    \begin{call}{actor}{Add poll}{concordia}{Poll creation form}
+    \end{call}
+
+    \begin{call}{actor}{Submit}{concordia}{New topic-poll page}
+
+        \begin{call}{concordia}{Create topic}{eth}{New topic ID}
+        \end{call}
+
+        \begin{call}{concordia}{Add poll to topic}{eth}{}
+        \end{call}
+
+        \begin{call}{concordia}{Save topic information}{orbit}{}
+        \end{call}
+
+        \begin{call}{concordia}{Save poll information}{orbit}{}
+        \end{call}
+
+    \end{call}
+\end{sequencediagram}

@@ -1,0 +1,41 @@
+\begin{sequencediagram}
+    \newthread{actor}{Actor}{}
+    \newinst[2]{concordia}{:Concordia}{}
+    \newinst[2]{eth}{:Ethereum}{}
+    \newinst[1]{orbit}{:OrbitDb}{}
+
+    \begin{call}{actor}{Fetch topic}{concordia}{Topic}
+
+        \begin{call}{concordia}{Get topic}{eth}{Topic}
+        \end{call}
+
+        \begin{call}{concordia}{Get poll}{eth}{Poll}
+        \end{call}
+
+        \begin{call}{concordia}{Get topic post IDs}{eth}{Post IDs}
+        \end{call}
+
+        \begin{call}{concordia}{Get posts loop}{concordia}{Posts}
+
+            \begin{call}{concordia}{Get post}{eth}{Post}
+            \end{call}
+
+        \end{call}
+
+        \begin{call}{concordia}{Retrieve topic information}{orbit}{}
+        \end{call}
+
+        \begin{call}{concordia}{Retrieve poll information}{orbit}{}
+        \end{call}
+
+        \begin{call}{concordia}{Validate poll information}{concordia}{}
+        \end{call}
+
+        \begin{call}{concordia}{Retrieve posts information loop}{concordia}{Posts information}
+
+            \begin{call}{concordia}{Retrieve post information}{orbit}{}
+            \end{call}
+
+        \end{call}
+    \end{call}
+\end{sequencediagram}
