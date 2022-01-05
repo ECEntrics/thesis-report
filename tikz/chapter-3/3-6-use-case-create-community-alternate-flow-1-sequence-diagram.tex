@@ -1,0 +1,21 @@
+\begin{sequencediagram}
+    \newthread{actor}{Actor}{}
+    \newinst[4]{concordia}{:Concordia}{}
+    \newinst[4]{eth}{:Ethereum}{}
+    \newinst{orbit}{:OrbitDb}{}
+
+    \begin{call}{actor}{Create community}{concordia}{Community creation form}
+    \end{call}
+
+    \begin{call}{actor}{Add external contract}{concordia}{External contract form}
+    \end{call}
+
+    \begin{call}{actor}{Submit}{concordia}{Created community page}
+
+        \begin{call}{concordia}{Create community}{eth}{New community ID}
+        \end{call}
+
+        \begin{call}{concordia}{Connect external contract}{eth}{}
+        \end{call}
+    \end{call}
+\end{sequencediagram}

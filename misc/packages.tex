@@ -15,7 +15,7 @@
 \usepackage{fontawesome5}
 
 % --- Styling ---
-\usepackage{hyperref}							% Extensive support for hypertext
+\usepackage[bookmarksnumbered]{hyperref}							% Extensive support for hypertext
 \usepackage{authblk}							% Support for footnote style author/affiliation
 \usepackage{enumitem}							% For item lists
 \usepackage{custom-packages/greek-enumerate}	% Greek enumeration for ordered item lists
@@ -30,6 +30,7 @@
 \usepackage{tcolorbox}							% Colored boxes
 \tcbuselibrary{minted}							% Make tcolorbox work with minted
 \usepackage{graphicx}
+\usepackage{appendix}							% Appendix helpers
 
 % --- TikZ and UML diagrams
 \usepackage{pgf-umlsd}
@@ -46,10 +47,11 @@
 \input{custom-commands/srs-commands}
 \input{custom-commands/use-case-commands}
 \input{custom-commands/custom-spheading}
+\input{custom-commands/appendix-overrides}
 
 % --- Custom styles ---
 \renewcommand{\arraystretch}{1.2}	% Streches the table row height so text is not crammed between the lines
 \MakeOuterQuote{"}	% For csquotes package
 
 % Hyphenations
-\input{misc/hyphenations}
+\input{misc/hyphenations}	%TODO: needed?
