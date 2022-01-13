@@ -5,19 +5,16 @@
 \begin{itemize}
     \item Επισκέπτες
     \item Εγγεγραμμένα μέλη
-    \item Δημιουργοί κοινοτήτων %TODO: Έχει νόημα σαν ρόλος ή μπορεί να είναι απλά "εγγεγραμμένο μέλος";
     \item Συμβόλαια κοινοτήτων
 \end{itemize}
 
 \subsection{Ενεργοί χρήστες}
 
-Οι ενεργοί χρήστες στο σύστημα είναι οι επισκέπτες, τα εγγεγραμμένα μέλη και οι δημιουργοί κοινοτήτων.
+Οι ενεργοί χρήστες στο σύστημα είναι οι επισκέπτες και τα εγγεγραμμένα μέλη.
 
 Όλοι οι χρήστες στο σύστημα είναι αρχικά επισκέπτες. Οι επισκέπτες έχουν τη δυνατότητα να βλέπουν το περιεχόμενο της κοινότητας, αλλά δε μπορούν να συμμετέχουν δημιουργώντας νέο περιεχόμενο (δημοσιεύοντας νέα θέματα ή μηνύματα). Επίσης, δε μπορούν να συμμετέχουν στις ψηφοφορίες της κοινότητας ή να ψηφίσουν τα μηνύματα.
 
 Όταν ένας επισκέπτης εγγράφεται στο σύστημα, αποκτά έναν μοναδικό, αύξοντα αριθμό χρήστη και αποτελεί πλέον εγγεγραμμένο μέλος της κοινότητας. Τα εγγεγραμμένα μέλη έχουν τα δικαιώματα των επισκεπτών και μπορούν επιπλέον να προσθέσουν περιεχόμενο στην πλατφόρμα μέσω της δημιουργίας νέων θεμάτων, της δημοσίευσης μηνυμάτων και της ψήφισης στις ψηφοφορίες στις οποίες έχουν δικαίωμα.
-
-Οι δημιουργοί κοινοτήτων είναι οι χρήστες οι οποίοι χρησιμοποιούν την δυνατότητα του συστήματος να δημιουργήσει κοινότητες, τα μέλη των οποίων διαφοροποιούνται βάσει ενός εξωτερικού token. Το token που ορίζει τα μέλη μίας κοινότητας προέρχεται από ένα έξυπνο συμβόλαιο το οποίο ορίζεται κατά τη δημιουργία της κοινότητας. Οι δημιουργοί κοινοτήτων πρέπει να είναι εγγεγραμμένα μέλη της κοινότητας. Ένας δημιουργός κοινότητας δεν έχει παραπάνω δικαιώματα από αυτά των απλών εγγεγραμμένων χρηστών.
 
 \subsection{Παθητικοί χρήστες}
 
@@ -25,7 +22,7 @@
 
 \subsection{Σύνοψη χρηστών}
 
-Συμπερασματικά προκύπτουν τρεις διακριτές κατηγορίες ενεργών χρηστών με ξεχωριστά δικαιώματα όπως φαίνεται στο παρακάτω σχήμα:
+Συμπερασματικά προκύπτουν δύο διακριτές κατηγορίες ενεργών χρηστών με ξεχωριστά δικαιώματα όπως φαίνεται στο παρακάτω σχήμα:
 
 \begin{threeparttable}[H]
     \begin{center}
@@ -36,7 +33,6 @@
             \midrule
             Επισκέπτες & \textcolor{OliveGreen}{\faIcon{check}} & \textcolor{OliveGreen}{\faIcon{check}} & \textcolor{OliveGreen}{\faIcon{check}} & \textcolor{OliveGreen}{\faIcon{check}} & \textcolor{red}{\faIcon{times}} & \textcolor{red}{\faIcon{times}} & \textcolor{red}{\faIcon{times}} & \textcolor{red}{\faIcon{times}} & \textcolor{red}{\faIcon{times}} \\ [0.5ex]
             Εγγεγραμμένα μέλη & \textcolor{OliveGreen}{\faIcon{check}} & \textcolor{OliveGreen}{\faIcon{check}} & \textcolor{OliveGreen}{\faIcon{check}} & \textcolor{OliveGreen}{\faIcon{check}} & \textcolor{OliveGreen}{\faIcon{check}} & \textcolor{OliveGreen}{\faIcon{check}} & \textcolor{OliveGreen}{\faIcon{check}}\tnote{*} & \textcolor{OliveGreen}{\faIcon{check}}\tnote{*} & \textcolor{OliveGreen}{\faIcon{check}} \\ [0.5ex]
-            Δημιουργοί κοινοτήτων & \textcolor{OliveGreen}{\faIcon{check}} & \textcolor{OliveGreen}{\faIcon{check}} & \textcolor{OliveGreen}{\faIcon{check}} & \textcolor{OliveGreen}{\faIcon{check}} & \textcolor{OliveGreen}{\faIcon{check}} & \textcolor{OliveGreen}{\faIcon{check}} & \textcolor{OliveGreen}{\faIcon{check}}\tnote{*} & \textcolor{OliveGreen}{\faIcon{check}}\tnote{*} & \textcolor{OliveGreen}{\faIcon{check}} \\ [0.5ex]
             \bottomrule
         \end{tabularx}
         \begin{tablenotes}
