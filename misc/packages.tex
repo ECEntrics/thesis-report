@@ -3,11 +3,8 @@
 % Used for flexibility, so other types of documents can have their own preambles (e.g. presentations)
 \usepackage[subpreambles=true]{standalone}
 
-% Used for all the files inside thesis directory
-\usepackage{subfiles}	%TODO: possibly unused (remove?)
-
 % Paper size and margins
-\usepackage{geometry}
+\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2.2cm, right=2.2cm]{geometry}
 
 % --- Languages & Fonts ---
 \usepackage{polyglossia}
@@ -15,6 +12,7 @@
 \usepackage{fontawesome5}
 
 % --- Styling ---
+\PassOptionsToPackage{hyphens}{url}
 \usepackage[bookmarksnumbered]{hyperref}							% Extensive support for hypertext
 \usepackage{authblk}							% Support for footnote style author/affiliation
 \usepackage{enumitem}							% For item lists
@@ -31,8 +29,17 @@
 \tcbuselibrary{minted}							% Make tcolorbox work with minted
 \usepackage{graphicx}
 \usepackage{appendix}							% Appendix helpers
+\usepackage[onehalfspacing]{setspace}
 
-% --- TikZ and UML diagrams
+% --- fancyhdr ---
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[L]{\nouppercase{\rightmark}}
+\fancyhead[R]{\nouppercase{\leftmark}}
+\setlength{\headheight}{15pt}
+
+% --- TikZ and UML diagrams ---
 \usepackage{pgf-umlsd}
 
 % --- Bibliography ---
@@ -52,6 +59,3 @@
 % --- Custom styles ---
 \renewcommand{\arraystretch}{1.2}	% Streches the table row height so text is not crammed between the lines
 \MakeOuterQuote{"}	% For csquotes package
-
-% Hyphenations
-\input{misc/hyphenations}	%TODO: needed?
