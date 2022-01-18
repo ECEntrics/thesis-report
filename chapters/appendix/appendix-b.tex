@@ -1,4 +1,56 @@
 \chapter*{Παράρτημα Βʹ\\[20pt]Στατιστικά κώδικα}\label{appendix-b}
 \addcontentsline{toc}{section}{Βʹ Στατιστικά κώδικα}
 
-% TODO: add code statistics
+Στο παρόν παράρτημα παρατίθενται πίνακες με στατιστικά στοιχεία σχετικά με τον κώδικα της εφαρμογής Concordia, καθώς και των υλοποιημένων βιβλιοθηκών.
+Η καταμέτρηση έγινε με το cloc\footnote{\url{https://github.com/AlDanial/cloc}}, αγνοήθηκαν auto-generated και configuration αρχεία οπως yarn.lock κτλ.
+
+\begin{center}
+	\codestatstable{Concordia}{https://gitlab.com/ecentrics/concordia}
+	{
+		JSX & 54 & 510 & 14 & 4491 \\
+		JavaScript & 81 & 302 & 84 & 2035 \\
+		Groovy & 1 & 76 & 32 & 673 \\
+		Solidity & 5 & 142 & 20 & 553 \\
+		CSS & 26 & 87 & 8 & 426 \\
+		JSON & 10 & 0 & 0 & 352 \\
+		Markdown & 7 & 157 & 0 & 352 \\
+		Dockerfile & 5 & 68 & 51 & 128 \\
+		Bourne Shell & 9 & 27 & 10 & 117 \\
+		make & 1 & 10 & 8 & 77 \\
+		YAML & 1 & 3 & 0 & 30 \\
+		SVG & 6 & 0 & 0 & 25 \\
+		HTML & 1 & 3 & 23 & 16 \\
+		diff & 1 & 0 & 8 & 7 \\
+		\hline
+		SUM: & 208 & 1385 & 258 & 9282 \\
+	}
+
+	\codestatstable{drizzle}{https://gitlab.com/ecentrics/drizzle}
+	{
+		JavaScript & 36 & 281 & 137 & 1448 \\
+		JSON & 1 & 0 & 0 & 16 \\
+		Markdown & 1 & 2 & 0 & 4 \\
+		\hline
+		SUM: & 38 & 283 & 137 & 1468 \\
+	}
+
+	\codestatstable{breeze}{https://gitlab.com/ecentrics/breeze}
+	{
+		JavaScript & 16 & 105 & 56 & 583 \\
+		JSON & 1 & 0 & 0 & 17 \\
+		Markdown & 1 & 2 & 0 & 4 \\
+		\hline
+		SUM: & 18 & 107 & 56 & 604 \\
+	}
+
+
+
+	\codestatstable{eth-identity-provider}{https://gitlab.com/ecentrics/eth-identity-provider}
+	{
+		JavaScript & 4 & 36 & 23 & 211 \\
+		JSON & 1 & 0 & 0 & 13 \\
+		Markdown & 1 & 2 & 0 & 4 \\
+		\hline
+		SUM: & 6 & 38 & 23 & 228 \\
+	}
+\end{center}
