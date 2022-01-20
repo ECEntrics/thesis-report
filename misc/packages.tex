@@ -4,7 +4,7 @@
 \usepackage[subpreambles=true]{standalone}
 
 % Paper size and margins
-\usepackage{geometry}
+\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2.2cm, right=2.2cm]{geometry}
 
 % --- Languages & Fonts ---
 \usepackage{polyglossia}
@@ -31,7 +31,15 @@
 \usepackage{appendix}							% Appendix helpers
 \usepackage[onehalfspacing]{setspace}
 
-% --- TikZ and UML diagrams
+% --- fancyhdr ---
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[L]{\nouppercase{\rightmark}}
+\fancyhead[R]{\nouppercase{\leftmark}}
+\setlength{\headheight}{15pt}
+
+% --- TikZ and UML diagrams ---
 \usepackage{pgf-umlsd}
 
 % --- Bibliography ---
