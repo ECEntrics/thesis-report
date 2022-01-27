@@ -19,10 +19,13 @@
 \usepackage{custom-packages/greek-enumerate}	% Greek enumeration for ordered item lists
 \usepackage{float}								% For \begin{figure}[H]
 \usepackage[font={footnotesize, it}]{caption}	% For captions under figures
+\DeclareCaptionLabelFormat{AppendixBTables}{Πίνακας B.#2}
 \usepackage{tabularx}							% Support for break lines inside table cells
 \usepackage{multirow, booktabs}					% Useful table styling commands
 \usepackage[flushleft]{threeparttable}			% Table footnotes
-\usepackage[dvipsnames]{xcolor}					% Text colors
+\usepackage[dvipsnames, table]{xcolor}					% Text colors
+\definecolor{gray1}{gray}{0.85}
+\definecolor{gray2}{gray}{0.9}
 \usepackage{minted}								% Source code highlighting (make sure to add -shell-escape flag!)
 \usepackage [autostyle]{csquotes}
 \usepackage{tcolorbox}							% Colored boxes
