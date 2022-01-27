@@ -1,25 +1,129 @@
-% examples... for more check out this:
-% https://www.overleaf.com/learn/latex/bibliography_management_with_bibtex
-
-% proposed label naming convention: "chapter.subchapter-descriptive_name"
-% for example: "2.2.2-why-gpg-is-awesome"
-
-@article{einstein,
-  author =       "Albert Einstein",
-  title =        "{Zur Elektrodynamik bewegter K{\"o}rper}. ({German})
-                 [{On} the electrodynamics of moving bodies]",
-  journal =      "Annalen der Physik",
-  volume =       "322",
-  number =       "10",
-  pages =        "891--921",
-  year =         "1905",
-  DOI =          "http://dx.doi.org/10.1002/andp.19053221004"
+% See also: https://www.overleaf.com/learn/latex/bibliography_management_with_bibtex
+@misc{1.2-ethereum-learn,
+	title        = {Μάθετε για το Ethereum},
+	url          = {https://ethereum.org/el/learn/},
+	urldate      = {2021-03-16}
 }
-
-@book{latexcompanion,
-    author    = "Michel Goossens and Frank Mittelbach and Alexander Samarin",
-    title     = "The \LaTeX\ Companion",
-    year      = "1993",
-    publisher = "Addison-Wesley",
-    address   = "Reading, Massachusetts"
+@online{1.2-the-meaning-of-decentralization,
+	title        = {The Meaning of Decentralization},
+	author       = {Vitalik Buterin},
+	url          = {https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274},
+	date         = {2017-02-06}
+}
+@book{1.2-virtual-migration,
+	title        = {Virtual Migration},
+	author       = {Aneesh, A.},
+	date         = 2006,
+	optpublisher = {Duke University Press}
+}
+@article{2.2-ecdsa,
+	title        = {The Elliptic Curve Digital Signature Algorithm (ECDSA)},
+	author       = {Johnson, Don and Menezes, Alfred and Vanstone, Scott},
+	year         = 2001,
+	month        = 8,
+	journal      = {International Journal of Information Security},
+	doi          = {10.1007/s102070100002},
+	url          = {https://doi.org/10.1007/s102070100002}
+}
+@online{2.3-merkle-tree,
+	title        = {Merkle tree},
+	author       = {Wikipedia},
+	url          = {https://en.wikipedia.org/wiki/Merkle_tree}
+}
+@online{2.3-merkle-proofs-explained,
+	title        = {Merkle proofs Explained.},
+	author       = {Belavadi Prahalad},
+	url          = {https://medium.com/crypto-0-nite/merkle-proofs-explained-6dd429623dc5},
+	date         = {2018-01-07}
+}
+@inproceedings{2.4-p2p-networking,
+	title        = {A Definition of Peer-to-Peer Networking for the Classification of Peer-to-Peer Architectures and Applications},
+	author       = {Schollmeier, R.},
+	year         = 2001,
+	booktitle    = {Proceedings First International Conference on Peer-to-Peer Computing},
+	pages        = {101--102},
+	doi          = {10.1109/P2P.2001.990434}
+}
+@article{2.5-bitcoin,
+	title        = {Bitcoin: A Peer-to-Peer Electronic Cash System},
+	author       = {Nakamoto, Satoshi},
+	journal      = {Cryptography Mailing list at https://metzdowd.com},
+	date         = {2008-10-31}
+}
+@misc{2.5-blockchain,
+	title        = {Blockchain},
+	author       = {Wikipedia},
+	url          = {https://en.wikipedia.org/wiki/Blockchain}
+}
+@online{2.6-ethereum-whitepaper,
+	title        = {Ethereum Whitepaper},
+	author       = {Vitalik Buterin},
+	url          = {https://ethereum.org/en/whitepaper},
+	urldate      = {2021-06-28},
+	date         = 2013
+}
+@online{2.6-ethereum-documentation,
+	title        = {Ethereum documentation},
+	author       = {Ethereum community},
+	url          = {https://ethereum.org/en/developers/docs/},
+	urldate      = {2021-09-05}
+}
+@article{2.6-ethereum-smart-contracts,
+	title        = {Formalizing and Securing Relationships on Public Networks},
+	author       = {Szabo, Nick},
+	year         = 1997,
+	month        = 9,
+	journal      = {First Monday},
+	volume       = 2,
+	number       = 9,
+	doi          = {10.5210/fm.v2i9.548},
+	url          = {https://journals.uic.edu/ojs/index.php/fm/article/view/548}
+}
+@book{2.6-ethereum-mastering,
+	title        = {Mastering Ethereum: Building Smart Contracts and DApps},
+	author       = {Andreas M Antonopoulos, Gavin Wood},
+	publisher    = {O'Reilly Media},
+	isbn         = 1491971940,
+	date         = 2018,
+	opturl       = {https://cypherpunks-core.github.io/ethereumbook/}
+}
+@misc{2.7-ipfs,
+	title        = {IPFS},
+	url          = {https://ipfs.io/}
+}
+@misc{2.7-ipfs-docs,
+	title        = {IPFS documentation},
+	url          = {https://docs.ipfs.io/}
+}
+@online{4.1-github-flow,
+	title        = {Understanding the GitHub flow},
+	author       = {GitHub Guides},
+	url          = {https://guides.github.com/introduction/flow/}
+}
+@misc{4.2-node.js,
+	title        = {Node.js},
+	author       = {Wikipedia},
+	url          = {https://en.wikipedia.org/wiki/Node.js}
+}
+@misc{4.2-orbitdb,
+	title        = {OrbitDB},
+	url          = {https://orbitdb.org}
+}
+@misc{4.2-orbitdb-guide,
+	title        = {Getting Started with OrbitDB},
+	url          = {https://github.com/orbitdb/orbit-db/blob/main/GUIDE.md}
+}
+@misc{5.2-privacy-on-ethereum,
+	title        = {Privacy on Ethereum},
+	url          = {https://docs.ethhub.io/ethereum-roadmap/privacy/},
+	urldate      = {2021-12-12}
+}
+@article{5.2-taxonomy-of-reputation-systems,
+	title        = {Reputation systems: A survey and taxonomy},
+	author       = {Hendrikx, Ferry and Bubendorfer, Kris and Chard, Ryan},
+	year         = 2014,
+	month        = {08},
+	journal      = {Journal of Parallel and Distributed Computing},
+	volume       = 75,
+	doi          = {10.1016/j.jpdc.2014.08.004}
 }

@@ -1,0 +1,26 @@
+\begin{sequencediagram}
+    \newthread{actor}{Actor}{}
+    \newinst[4]{concordia}{:Concordia}{}
+    \newinst[2]{eth}{:Ethereum}{}
+    \newinst[1]{orbit}{:OrbitDb}{}
+
+    \begin{call}{actor}{Sign up}{concordia}{Sign up form}
+    \end{call}
+
+    \begin{call}{actor}{Submit}{concordia}{Personal information form}
+
+        \begin{call}{concordia}{Create user}{eth}{New user ID}
+        \end{call}
+
+        \begin{call}{concordia}{Create databases}{orbit}{}
+        \end{call}
+
+    \end{call}
+
+    \begin{call}{actor}{Submit}{concordia}{Home page}
+
+        \begin{call}{concordia}{Save personal information}{orbit}{}
+        \end{call}
+
+    \end{call}
+\end{sequencediagram}
