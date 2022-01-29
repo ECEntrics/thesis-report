@@ -13,8 +13,9 @@
 
 	\begin{enumitemcenteredfigure}
 		\includegraphics[width=.95\textwidth]{assets/figures/chapter-2/2.7.merkle-dag.png}
-		\caption{Merkle DAG\cite{2.7-merkle-dags-proto-school}}
+		\caption[Παράδειγμα Merkle DAG]{Παράδειγμα Merkle DAG\footnotemark}
 	\end{enumitemcenteredfigure}
+	\footnotetext{\url{https://proto.school/merkle-dags/}}
 
 	Στο παραπάνω Merkle DAG τα baf...i αποτελούν τα CID των αρχείων και των φακέλων. Το δένδρο δημιουργείται από κάτω προς τα πάνω, υπολογίζοντας κάθε φορά τα κατάλληλα hashes/CIDs. Σε περίπτωση που το περιεχόμενο ενός κόμβου αλλάξει, τότε αλλάζει τόσο το CID του, όσο και τα CIDs όλων των προγόνων του.
 	\item \textbf{Ανακάλυψη περιεχομένου μέσω κατανεμημένων πινάκων κατακερματισμού (\textenglish{Distributed Hash Tables ή DHTs})}. Ο DHT είναι ένα κατανεμημένο σύστημα για την αντιστοίχιση κλειδιών σε τιμές. Στο IPFS αποτελεί το θεμελιώδες συστατικό του συστήματος δρομολόγησης περιεχομένου και λειτουργεί ως διασταύρωση μεταξύ καταλόγου και συστήματος πλοήγησης. Πρακτικά πρόκειται για ένα πίνακα που αποθηκεύει ποιος έχει ποια δεδομένα και, μέσω του οποίου, ο χρήστης βρίσκει τον peer που έχει αποθηκευμένο το επιθυμητό περιεχόμενο.
