@@ -35,8 +35,11 @@
 \usepackage{appendix}							% Appendix helpers
 \usepackage[onehalfspacing]{setspace}
 
-% --- fancyhdr ---
+% --- titlesec ---
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{2\baselineskip}{\baselineskip}
 
+% --- fancyhdr ---
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhead[L]{\nouppercase{\rightmark}}
