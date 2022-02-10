@@ -1,4 +1,5 @@
 \newcommand{\useCaseTable}[8] {{
+    \vspace{\baselineskip}
     \begin{table}[H]
         \begin{center}
             \begin{tabularx}{\textwidth}{l X}
@@ -16,6 +17,7 @@
         \caption{#7}
         #8
     \end{table}
+    \vspace{2\baselineskip}
 }}
 
 \newcommand{\useCaseBaseFlowTable}[4] {{
@@ -36,9 +38,11 @@
         \caption{#3}
         #4
     \end{table}
+    \vspace{2\baselineskip}
 }}
 
 \newcommand{\useCaseAlternateFlowTable}[7] {{
+    \vspace{\baselineskip}
     \begin{table}[H]
         \begin{center}
             \begin{tabularx}{\textwidth}{l X X}
@@ -58,4 +62,5 @@
         \caption{#6}
         #7
     \end{table}
+    \vspace{\baselineskip}
 }}
