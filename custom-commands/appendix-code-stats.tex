@@ -1,18 +1,13 @@
 \newcommand{\codestatstable}[3]{
 	\begin{table}[H]
 	\centering
-	\rowcolors{3}{}{gray2}
-	\begin{tabular}{ |l|r|r|r|r| }
-		\hline
-		\rowcolor{gray1}
-		\multicolumn{5}{|c|}{\large{\textbf{#1}}} \\
-		\rowcolor{gray1}
-		\multicolumn{5}{|c|}{\small{\url{#2}}} \\
-		\hline
+	\begin{tabular}{ l r r r r }
+		\multicolumn{5}{c}{\large{\textbf{#1}}} \\
+		\multicolumn{5}{c}{\small{\url{#2}}} \\
 		\textbf{Γλώσσα} & \textbf{Αρχεία} & \textbf{Κενές γραμμές} & \textbf{Σχόλια} & \textbf{Κώδικας} \\
-		\hline
+		\toprule
 		#3
-		\hline
+		\bottomrule
 	\end{tabular}
 	\caption{#1 - στατιστικά κώδικα}
 	\end{table}
