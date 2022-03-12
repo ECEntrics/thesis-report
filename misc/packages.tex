@@ -13,12 +13,14 @@
 
 % --- Styling ---
 \PassOptionsToPackage{hyphens}{url}
-\usepackage[bookmarksnumbered]{hyperref}							% Extensive support for hypertext
 \usepackage{authblk}							% Support for footnote style author/affiliation
 \usepackage{enumitem}							% For item lists
 \usepackage{custom-packages/greek-enumerate}	% Greek enumeration for ordered item lists
 \usepackage{float}								% For \begin{figure}[H]
 \usepackage[font={footnotesize, it}]{caption}	% For captions under figures
+\usepackage[onehalfspacing]{setspace}
+\usepackage[bottom]{footmisc}
+\DeclareCaptionLabelFormat{AppendixAFigures}{Στιγμιότυπο Corcordia Α.#2}
 \DeclareCaptionLabelFormat{AppendixBTables}{Πίνακας B.#2}
 \usepackage{tabularx}							% Support for break lines inside table cells
 \usepackage{multirow, booktabs}					% Useful table styling commands
@@ -32,10 +34,14 @@
 \tcbuselibrary{minted}							% Make tcolorbox work with minted
 \usepackage{graphicx}
 \usepackage{appendix}							% Appendix helpers
-\usepackage[onehalfspacing]{setspace}
+
+\usepackage[bookmarksnumbered]{hyperref}							% Extensive support for hypertext
+
+% --- titlesec ---
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{2\baselineskip}{\baselineskip}
 
 % --- fancyhdr ---
-
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhead[L]{\nouppercase{\rightmark}}
@@ -61,5 +67,5 @@
 \input{custom-commands/appendix-code-stats}
 
 % --- Custom styles ---
-\renewcommand{\arraystretch}{1.2}	% Streches the table row height so text is not crammed between the lines
+\renewcommand{\arraystretch}{1.2}	% Stretches the table row height so text is not crammed between the lines
 \MakeOuterQuote{"}	% For csquotes package

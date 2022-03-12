@@ -37,6 +37,10 @@
 % --------------------------
 
 % Prints out the references
-\printbibliography[heading=bibintoc]
+\newpage
+\fancyhead[L]{Βιβλιογραφία}
+\fancyhead[R]{}
+\printbibliography[heading=bibintoc,
+title={\bibname\label{bibliography}}]
 
 \end{document}

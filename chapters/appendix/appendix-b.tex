@@ -1,10 +1,13 @@
 \chapter*{Παράρτημα Βʹ\\[20pt]Στατιστικά κώδικα}\label{appendix-b}
 \addcontentsline{toc}{section}{Βʹ Στατιστικά κώδικα}
 
+\fancyhead[L]{Παράρτημα Βʹ}
+\fancyhead[R]{Στατιστικά κώδικα}
+
 \captionsetup{labelformat=AppendixBTables}
 \setcounter{table}{0}
 
-Στο παρόν παράρτημα παρατίθενται πίνακες με στατιστικά στοιχεία του κώδικα της εφαρμογής Concordia, καθώς και των υλοποιημένων βιβλιοθηκών. Συγκεκριμένα, πραγματοποιήθηκε καταμέτρηση των αρχείων και των γραμμών κώδικα μέσω του προγραμμάτος cloc\footnote{\url{https://github.com/AlDanial/cloc}}, διαδικασία στην οποία αγνοήθηκαν αυτόματα configuration και auto-generated αρχεία (π.χ. yarn.lock, .gitignore).
+Στο παρόν παράρτημα παρατίθενται πίνακες με στατιστικά στοιχεία του κώδικα της εφαρμογής Concordia, καθώς και των υλοποιημένων βιβλιοθηκών. Συγκεκριμένα, πραγματοποιήθηκε καταμέτρηση των αρχείων και των γραμμών κώδικα (27-1-2022) μέσω του προγραμμάτος cloc\footnote{\url{https://github.com/AlDanial/cloc}}, διαδικασία στην οποία αγνοήθηκαν αυτόματα configuration και auto-generated αρχεία (π.χ. yarn.lock, .gitignore).
 
 \begin{center}
 	\codestatstable{Concordia}{https://gitlab.com/ecentrics/concordia}
@@ -13,14 +16,17 @@
 		JavaScript & 81 & 302 & 84 & 2035 \\
 		Groovy & 1 & 76 & 32 & 673 \\
 		Solidity & 5 & 142 & 20 & 553 \\
+		\hline
 		CSS & 26 & 87 & 8 & 426 \\
 		JSON & 10 & 0 & 0 & 352 \\
 		Markdown & 7 & 157 & 0 & 352 \\
 		Dockerfile & 5 & 68 & 51 & 128 \\
+		\hline
 		Bourne Shell & 9 & 27 & 10 & 117 \\
 		make & 1 & 10 & 8 & 77 \\
 		YAML & 1 & 3 & 0 & 30 \\
 		SVG & 6 & 0 & 0 & 25 \\
+		\hline
 		HTML & 1 & 3 & 23 & 16 \\
 		diff & 1 & 0 & 8 & 7 \\
 		\hline
