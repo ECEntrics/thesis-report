@@ -14,13 +14,13 @@
 Εδώ αναλύεται η επικοινωνία κάθε μικροϋπηρεσίας:
 
 \begin{itemize}
-    \item \textbf{Contracts Migrator}: Η υπηρεσία εκτελεί αίτημα HTTP κατά τη μεταφόρτωση των \textenglish{contract} στο Ethereum blockchain. Eπίσης, εκτελεί αίτημα HTTP για τη μεταφόρτωση των \textenglish{contract artifact} στην υπηρεσία Contracts Provider.
+    \item \textbf{Contracts Migrator}: Η υπηρεσία εκτελεί αίτημα HTTP κατά τη μεταφόρτωση των \textenglish{contract} στο Ethereum blockchain. Επίσης, εκτελεί αίτημα HTTP για τη μεταφόρτωση των \textenglish{contract artifact} στην υπηρεσία Contracts Provider.
 
     \item \textbf{Concordia Application}: Η υπηρεσία εκτελεί αίτημα HTTP για τη λήψη των \textenglish{contract artifact} από την υπηρεσία Contracts Provider, εκτελεί αιτήματα HTTP για τη διενέργεια συναλλαγών στο Ethereum blockchain και, τέλος, δημιουργεί κανάλι επικοινωνίας UDP με την υπηρεσία Rendezvous Server, για την ανακάλυψη ομότιμων χρηστών στο δίκτυο IPFS.
 
     \item \textbf{Pinner}: Η υπηρεσία εκτελεί αίτημα HTTP για τη λήψη των \textenglish{contract artifact} από την υπηρεσία Contracts Provider, εκτελεί αιτήματα HTTP για την ανανέωση και παρατήρηση της κατάστασης του contract στο Ethereum blockchain και τέλος δημιουργεί κανάλι επικοινωνίας UDP με την υπηρεσία Rendezvous Server για την ανακάλυψη peer στο δίκτυο IPFS.
 
-    \item \textbf{Rendezvous Server}: Η υπηρεσία διατηρεί ανοιχτά κανάλια επικοινωνίας UDP με τους ομότιμους χρήστες, μέσω των οποίων ενημερώνει τη λίστα των διαθέσιμων, ενεργών χρηστών.
+    \item \textbf{Rendezvous Server}: Η υπηρεσία διατηρεί ανοιχτά κανάλια επικοινωνίας UDP με τους ομότιμους χρήστες, μέσω των οποίων ενημερώνει τη λίστα των διαθέσιμων ενεργών χρηστών.
 
-    \item \textbf{Contracts Provider}: Η υπηρεσία δεν υποκινεί καμία επικοινωνία, παρά μόνο απαντά σε αιτήματα επικοινωνίας από άλλες υπηρεσίες.
+    \item \textbf{Contracts Provider}: Η υπηρεσία δεν υποκινεί καμία επικοινωνία, παρά μόνο απαντά σε αιτήματα επικοινωνίας άλλων υπηρεσιών.
 \end{itemize}
